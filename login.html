@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/loginStyle.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navBg">
+
+            <div class="header">
+             <div class="menuButdiv">  <button onclick=" toggleMenu()">  <img src="images/bars-solid.svg" alt=""></button>
+             </div>
+            <div class="menulis">
+             <a href="index.html">Home</a>
+                 <a href="about.html">About</a>
+                 <a href="skills.html">Skills</a>
+                 <a href="portfolio.html">Portfolio</a>
+                 <a href="blogList.html" >Blog</a>
+                 <a href="contact.html" >Contact</a>
+                 <a href="login.html"  class="contactUSbg">Sign in</a>
+            
+            </div>
+            
+            </div>
+            
+            <div id="smallScreenMenu" >
+                <a href="homepage.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blogList.html" >Blog</a>
+                    <a href="contact.html" >Contact</a>
+                    <a href="login.html"  class="contactUSbg">Sign in</a>
+               
+               </div>
+                    </nav> 
+
+   <div class="login-container">
+   <div class="left-container">
+    <h1>First time?</h1>
+    <p>
+     Then you should Go sign up. We <br>     
+       promise you won’t get disappointed 
+    </p><br>
+        <a href="signup.html">Sign up</a>
+   </div>
+   
+<div class="right-container">
+
+    <form action="" class="right-container-form">
+        <p>already signed up?   </p>
+   <label for="" id="userErrorMEss" class="errorDisappear"></label>
+  <input type="text" class="right-container-form-input" placeholder="Email*" name="" id="email">
+  <label for="" id="passwordErrorMEss" class="errorDisappear"></label>
+  <input type="text" class="right-container-form-input" placeholder="Password*"  id="password">
+  <span id="checkbox-style">  <input type="checkbox"><p>keep me signed in </p> </span> 
+   <a href=""> forgot Password?</a>
+<button onclick="validateForm()"> login</button>
+    </form>
+</div>
+   </div>
+
+   
+   <div class="footer">
+    <div class="profile">
+        <img src="images/infopic2.jpg" alt="">
+        <p>Tuyisenge</p>
+    </div>
+    <div class="copyRight">
+     <p> Copyright © 2022 Picto.</p>
+
+    </div>
+    <div class="socialMEd">
+        <img src="images/socialMed/Vector.svg" alt="">
+            <img src="images/socialMed/Vector (1).svg" alt="">
+            <img src="images/socialMed/Vector (2).svg" alt="">
+            <img src="images/socialMed/Vector (3).svg" alt="">
+
+    </div>
+</div>   
+
+</div>
+
+<script src="menubut.js"></script>
+<script src="js/logineValidation.js"></script>
+</body>
+</html>

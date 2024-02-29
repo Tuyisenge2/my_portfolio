@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+  }
+  body{
+
+    background-color: #2C0143;
+    color:#ffffff;
+    font-family: sans-serif;
+    padding: 5rem;
+   }
+   .container{
+    width: 100%;
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+   }
+ 
+   .navBg {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #2C0143;
+    padding-top: 2%;
+   }
+   
+ .header{
+  display: flex;
+   }
+  
+   .menuButdiv {
+    display: none;
+    background-color: inherit;
+  }
+  
+  .menuButdiv button{
+  background-color: inherit;
+  border-color: #2C0143;
+  border: none;
+  }
+  
+  .menuButdiv button img{
+    width: 6vw;
+    height: 5vh;
+    filter: invert(1);
+  
+  }
+  
+   .menulis{
+    padding: 1% 0;
+    max-width: 750px;
+    width: 100%;
+    word-wrap: break-word;
+    letter-spacing: 0.1vw;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2%;
+   
+   }
+   .menulis a{
+  
+    font-size: 1rem;
+    text-decoration: none;
+   color:white;
+    font-weight: 800;
+   transition: color 0.8s ease;
+   padding: 1%;  
+  
+   }
+   .contactUSbg{    
+    background-color:#A387AF;
+   
+   }
+  
+   .header a:hover{
+    color: green;
+   
+  }
+  
+  #smallScreenMenu{
+  visibility: collapse;  
+  }
+ 
+.main{
+    margin-top: 3%;
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+ 
+    height: 550px;
+
+
+}
+.sideBar{
+    width: 100%;
+    max-width:180px;
+    background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap:9%;
+  background-color: rgb(25, 0, 35);
+  padding: 2%;
+}
+
+
+.SideLink{
+    display: inline-flex;
+    min-height: 28px;
+    align-items: center;
+    gap:5%;
+    max-width:140px;
+    width: 100%;
+
+}
+.Admin{
+    display: flex;
+}
+.Admin img{
+    height: 7vh;
+    width: 5vw;
+}
+.Admin p{
+    padding-top: 0.9vh;
+    line-height: 3vh;
+    font-size: clamp(9px,.8vw,24px);
+}
+
+
+.appli-text{
+    font-size: clamp(9px,.9vw,24px);}
+
+.SideLink a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(9px,1.1vw,24px);
+}
+.SideLink img{
+    min-height: 12px;
+    height: 2vh;
+    width: 100%;
+    max-width: 30px;
+}
+
+.selectedLink{
+    background-color: rgba(163, 135, 175, 0.45);
+    padding: 3%;
+
+}
+
+@media (max-width:975px) {
+
+    .SideLink {
+        min-height: 68px;
+        height: 100%;
+        gap: 5%;
+        max-width: 200px;
+        width: 70%;
+    }
+    
+}
+
+@media (max-width:792px) {
+
+
+   
+ 
+     .SideLink a p,.Admin p, .appli-text{
+ 
+          display: none;
+     }
+ .sideBar{
+     width: 15%;
+ }
+ .SideLink img{
+ width: 50%;
+ }
+}
+
+
+.right-sec-message{
+    width: 100%;
+   max-width: 570px;
+    height: inherit; 
+      background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+   color: black;
+
+}
+.content{
+    display: flex;
+    width: 100%;
+    height: inherit;
+}
+
+.contentBorderright{
+    border-right: 2px solid gray;
+}
+.contentUser{
+    width: clamp(10px,100%,140px);
+    display: flex;
+     flex-direction: column;
+     padding: 2%;
+     overflow: scroll;
+     gap: 8%;
+}
+.singleUser{
+    display: flex;
+    width: 100%;
+    min-height: 45px;
+    gap: 5%;
+
+}
+.userImage{
+    width: clamp(21px,100%,30px);
+}
+.userImage img{
+    width:100%;
+    min-height: 10px;
+    height: 100%;
+}
+.Username-Mess{
+flex: 1; 
+display: flex;
+flex-direction: column;
+gap: 2%;
+}
+.Username-Mess h1{
+ font-size: clamp(5px,.9vw,21px); 
+}
+.Username-Mess p{
+    font-size: clamp(12px,.7vw,21px);   
+   
+   }
+   .content-header{
+    display: flex;
+    min-height: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+.content-header label{
+    font-size: clamp(5px,1vw,21px); 
+ }
+
+#dashSearch{
+    display: flex;
+    background-color: gray;
+    height: 100%;
+    min-height: 22px;
+     padding:0% 2%;   
+    border-radius: 1vw;
+    max-width: 276px;
+    width: 100%;
+}
+
+#dashSearch button{
+    background-color: gray;
+    border: none;
+    padding-right: 1%;
+
+}
+#dashSearch img{
+    height: 3vh;
+    width: 100%;
+    max-width: 12px;
+}    
+#dashSearch input{
+height: 100%;
+min-height: 20px;
+border-left: 2px solid black;
+border-top: none;
+border-bottom: none;
+border-right: none;
+background-color: inherit;
+width: 100%;
+max-width: 240px;
+}
+
+
+.contentMessage{
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 3%;
+padding: 3%;
+width: 100%;
+}
+.User-image-id{
+    display: flex;
+    min-height: 30px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   }
+
+.User-image-id img{
+    width: 100%;
+    max-width: 50px;  
+}
+.User-image-id h1{ 
+    font-size: clamp(5px,.9vw,21px); }
+.mess-quarries {
+    min-height: 20px;
+    background-color: #D9D9D9;
+    width: 100%;
+    max-width: 320px;
+    font-size: clamp(12px,.7vw,21px);   
+    color: #2C0143;
+    font-weight: 600;
+    padding:2%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.mainBorderTop{
+    border-top: 2px solid gray;
+}
+
+/*  */
+
+.footer{
+    display: flex;
+    gap: 11vw;
+    height: auto;
+    margin-top: 3%;
+}
+.profile{
+    display: inline-flex;
+      gap: 1vw;
+}
+.profile img{
+border-radius: 50%;
+height: 2.4vw;
+width: 2.4vw;
+}
+.profile p{
+font-size: 1.2vw;
+padding-top: 1vh;
+}
+
+.copyRight{
+    height: auto;
+}
+.copyRight p{
+    font-size: 1.2vw;
+    padding-top: 0.9vh;
+}
+
+.socialMEd{
+    display: inline-flex;
+    gap: 2vw;
+   justify-content: center;
+   align-items: center;
+   padding-left: 2vw;
+   padding-right: 2vw;
+  
+    background-color: #A387AF;
+    height: 8vh;
+  
+  }
+  .socialMEd img{
+    height: 2.4vh;
+    width: 2vw;
+  }
+
+
+
+
+
+
+
+  @media (max-width:792px){
+
+    
+    .header{
+     display: flex;
+     flex-direction: column;
+      }
+      #smallScreenMenu{
+       visibility: visible;
+       display: flex;
+          margin-top: 1vh;
+          width: 100%;
+           gap: 2.7vw;
+         padding-bottom: 0.2vh;    
+         flex-direction: column;
+             }
+      
+           #smallScreenMenu a{
+      text-decoration: none;
+      color: #ffffff;
+            width: 30%;
+            padding-top: 1vh;
+            padding-left: 0.61vw;
+            font-size: 3vw;
+            height: 4vh;
+      
+           }   
+         .menulis{
+          visibility: collapse;
+         display: none;
+        
+         }
+ 
+         .menuButdiv {
+           display: flex;
+           margin-bottom: 1vh;
+       
+         }
+   
+ 
+     .SideLink a p,.Admin p, .appli-text{
+ 
+          display: none;
+     }
+ .sideBar{
+     width: 15%;
+ }
+ .SideLink img{
+ width: 100%;
+ }
+ 
+
+ #dashSearch{
+     height: 100%;   
+     min-height: 25px;  
+     width: 50%;
+}
+
+   
+#dashSearch input{
+height: 100%;
+min-height: 12px;
+
+}
+
+.mess-quarries {
+    height: 20%;
+    min-height: 10px;
+    padding: 2% 0% 0% 2%;
+     
+  }
+
+}
+
+  @media (max-width:542px){
+.Username-Mess{
+    display: none;
+}
+.userImage{
+    flex: 1;
+}
+.contentUse{
+    width: 10%;
+}
+
+  }
+
+
+  @media (max-width:426px) {
+
+        
+ #dashSearch{
+    height: 50%;   
+  min-height: 5px;
+}
+#dashSearch img {
+    height: 3.2vh;
+    width: 2vw;
+}
+.content-header label {
+    font-size: 2.5vw;
+}
+
+.contentMessage {
+
+}
+.mess-quarries {
+height: 30%;
+}
+  }

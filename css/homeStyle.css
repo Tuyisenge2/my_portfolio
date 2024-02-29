@@ -1,0 +1,732 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+  background-color: #2C0143;
+  color:#ffffff;
+  font-family: sans-serif;
+  padding: 5rem;
+ }
+
+ .container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .navBg {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+  background-color: #2C0143;
+  padding-top: 2%;
+ }
+ 
+ .header{
+display: flex;
+ }
+
+ .menuButdiv {
+  display: none;
+  background-color: inherit;
+}
+
+.menuButdiv button{
+background-color: inherit;
+border-color: #2C0143;
+border: none;
+}
+
+.menuButdiv button img{
+  width: 6vw;
+  height: 5vh;
+  filter: invert(1);
+
+}
+
+ .menulis{
+  padding: 1% 0;
+  max-width: 750px;
+  width: 100%;
+  word-wrap: break-word;
+  letter-spacing: 0.1vw;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2%;
+ 
+ }
+ .menulis a{
+
+  font-size: 1rem;
+  text-decoration: none;
+ color:white;
+  font-weight: 800;
+ transition: color 0.8s ease;
+ padding: 1%;  
+
+ }
+ .contactUSbg{    
+  background-color:#A387AF;
+ 
+ }
+
+ .header a:hover{
+  color: green;
+ 
+}
+
+#smallScreenMenu{
+visibility: collapse;  
+}
+
+   /*container*/
+
+   .Personal-container{
+    display: flex;
+    gap: 1%;
+    min-height:500px;
+    width: 100%;
+    padding-top: 4%;
+   }
+
+   .personal-Text{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3% 0;
+   }
+   .personal-Text h1{
+    font-size: 4rem;
+
+   }
+   .personal-Text p{
+    font-size: 1rem;
+    line-height: 2.5rem; 
+    letter-spacing: 0.1rem;
+   }
+   .personal-pic{
+    flex: 1;
+    padding: 3%;
+}
+.personal-pic img{
+  width: 100%;
+ height: 80;
+}
+
+
+   .personal-board{
+    display: inline-flex;
+    min-height: 1rem;
+    width: 100%;
+    max-width: 31rem;
+    padding: 2%;
+    background-color: #A387AF;
+    
+   }
+
+.board-experience{
+   padding: 2%;
+    max-width:8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 00.1vw solid white;
+
+
+}
+.board-experience h1{
+    font-size: 2vw;
+}
+.board-experience p{
+font-size: 1rem;
+}   
+
+.board-project{
+    display: flex;
+    flex-direction: column;
+    border-right: 00.1vw solid white;
+    width: 100%;
+    max-width: 12rem;
+    padding: 2%;
+}
+
+.board-project h1{
+    font-size: 2vw;
+   }
+  .board-project p{
+    font-size: 1rem;
+  }
+  .board-client{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 7.9rem;
+    padding: 2%;    
+  }
+  .board-client h1{
+    font-size: 1.7vw;
+  }
+  .board-client p{
+    font-size: 1rem;
+
+  }  
+
+
+.footer{
+  display: flex;
+  gap: 20vw;
+  height: auto;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+
+  
+}
+.profile{
+  display: inline-flex;
+    gap: 1vw;
+}
+.profile img{
+border-radius:50%;
+height: 2.4vw;
+width: 2.4vw;
+}
+.profile p{
+font-size: 1.2vw;
+padding-top: 1vh;
+}
+
+.copyRight{
+  height: auto;
+}
+.copyRight p{
+  font-size: 1.2vw;
+  padding-top: 0.9vh;
+}
+
+.socialMEd{
+  display: inline-flex;
+  gap: 2vw;
+ justify-content: center;
+ align-items: center;
+ padding-left: 2vw;
+ padding-right: 2vw;
+
+  background-color: #A387AF;
+  height: 8vh;
+
+}
+.socialMEd img{
+  height: 2.4vh;
+  width: 2vw;
+}
+
+
+@media(max-width:1025px)
+{
+
+  .menulis{
+    margin-top: 2vh;
+    width: 100%;
+     gap: 0.4vw;
+  padding-bottom: 0.2vh;       
+  
+   }
+
+  .menulis a{
+    width: 11vw;
+    padding-top: 1vh;
+    padding-left: 0.7vw;
+    font-size: 1.8vw;
+    height: 7vh;
+    font-weight: 900;
+   color:white;
+   }
+    
+     /*container*/
+  
+     .Personal-container{
+      display: flex;
+      gap: 1.3vw;
+      height: 83.5vh;
+      width: 100%;
+     }
+  
+     .personal-Text{
+         gap: 1vh; 
+       padding-top: 6vh;
+       }
+     .personal-Text{
+           gap: 2vh;
+     }
+     .personal-Text h1{
+      font-size: 5vw;
+  
+     }
+
+
+  /*stop*/
+
+   .personal-Text p{
+font-size: 1.7vw;
+   }
+   
+   .personal-board{
+    height: 12vh;
+    width: 27vw;
+    margin:auto;
+    padding: auto;
+    width: 40%;
+   }
+.board-experience{
+    border-right: 0.2vw solid white;
+    padding-right: 0.9vw;
+    margin-right: 1.1vw;
+
+}
+.board-experience h1{
+    padding-bottom: 1.2vh;
+}
+.board-experience p{
+font-size: 1.3vw;
+}   
+
+.board-project{
+    border-right: 00.2vw solid white;
+    padding-right: 0.1vw;
+    margin-right: 1.1vw;
+    width: 12vw;
+
+
+}
+
+.board-project h1{
+    font-size: 2.3vw;
+    padding-bottom: 0.5vh;
+   }
+  .board-project p{
+    font-size: 1.3vw;
+  }
+  .board-client{
+   width: 10vw;
+    padding-right: 0.9vw;
+    
+  }
+  .board-client h1{
+    font-size: 2.2vw;
+    padding-bottom: 1.1vh;
+  }
+  .board-client p{
+    font-size: 1.4vw;
+    min-width:6vw;
+
+  }  
+
+  .Personal-container{
+    height: auto;
+
+  }  
+
+}
+
+@media(max-width:746px)
+{
+
+
+   
+ .navBg {
+  width: 100%;
+  padding-top: 1vh;
+  
+ }
+ 
+ .menulis{
+  margin-top: 2.2vh;
+  width: 100%;
+ display: flex;
+ gap: 0vw;
+padding-bottom: 0.1vh;       
+
+ }
+ 
+ .menulis a{
+  width: 12vw;
+  padding-top: 0.5vh;
+  padding-left: 0.6vw;
+  font-size: 2vw;
+  height: 5vh;
+
+ }
+ 
+ .personal-Text p{
+  font-size: 1.7vw;
+     }
+     
+     .personal-board{
+      height: 13vh;
+      width: 45vw;
+      padding: 2.3vh;
+      margin:1vh 0vh 1vh 0vh;
+  
+     }
+  .board-experience{
+      min-width:11vw;
+      border-right: 0.3vw solid white;
+  
+  }
+  .board-experience h1{
+      padding-bottom: 1.2vh;
+      font-size: 2.6vw;
+  }
+  .board-experience p{
+  font-size: 1.8vw;
+  }   
+  
+  .board-project{
+      border-right: 0.3vw solid white;
+  
+  }
+  
+  .board-project h1{
+    padding-top: 0.4vh;
+      font-size: 2.598vw;
+      padding-bottom: 1.1vh;
+     }
+     .board-project{
+      width: 17vw;
+      padding-right: 1vw;
+     }
+    .board-project p{
+      width: 17vw;
+      font-size: 1.7vw;
+    }
+
+   
+
+    .board-client{
+      min-width: 12vw;
+    }
+  
+    .board-client h1{
+      font-size: 2.5vw;
+      padding-top: 0.3vh;
+      padding-bottom: 1.1vh;
+    }
+    .board-client p{
+      font-size: 1.7vw;
+      min-width:5vw;
+  
+    }
+    .Personal-container{
+      height: auto;
+
+    }  
+
+/* footer */
+
+
+.footer{
+  display: flex;
+  gap: 12vw;
+  height: auto;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+
+  
+}
+
+.profile {
+height: 5.4vh;
+width: 4vw;
+}
+.profile img{
+width: 100%;
+height: 100%;
+}
+.profile p{
+font-size: 1.7vw;
+padding-top: 2vh;
+}
+
+.copyRight{
+  height: auto;
+}
+.copyRight p{
+  font-size: 1.7vw;
+  padding-top: 1.9vh;
+}
+.socialMEd{
+  display: inline-flex;
+  gap: 5vw;
+}
+.socialMEd img{
+  height: 2vh;
+  width: 2vw;
+}
+
+
+
+}
+@media(max-width:500px)
+{
+
+  
+  .Personal-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 100%;
+   }
+ 
+   .header{
+    display: flex;
+    flex-direction: column;
+     }
+     #smallScreenMenu{
+ visibility: visible;
+ display: flex;
+    margin-top: 1vh;
+    width: 100%;
+     gap: 2.7vw;
+   padding-bottom: 0.2vh;    
+   flex-direction: column;
+       }
+
+     #smallScreenMenu a{
+text-decoration: none;
+color: #ffffff;
+      width: 30%;
+      padding-top: 1vh;
+      padding-left: 0.61vw;
+      font-size: 3vw;
+      height: 4vh;
+
+     }   
+   .menulis{
+    visibility: collapse;
+      display: none;
+  
+   }
+ 
+  .menulis a{
+    width: 30%;
+    padding-top: 1vh;
+    padding-left: 0.61vw;
+    font-size: 3vw;
+    height: 4vh;
+  
+   }
+   .menuButdiv {
+    display: flex;
+    margin-bottom: 1vh;
+
+  }
+
+     /*container*/
+    
+     .personal-Text{
+         gap: 0.4vh; 
+       padding-top: 6vh;
+       padding-right: 8vw;
+       }
+     .personal-Text{
+           gap: 2vh;
+     }
+     .personal-Text h1{
+      font-size: 5.5vw;
+  
+     }
+
+
+  /*stop*/
+
+   .personal-Text p{
+font-size: 3vw;
+   }
+   
+   .personal-board{
+    height: 13vh;
+    width: 76vw;
+    padding: 2.3vh;
+    margin:4vh 11vh 3vh 0vh;
+
+   }
+.board-experience{
+    min-width:17vw;
+    border-right: 0.2vw solid white;
+    padding-right: 0.9vw;
+    margin-right: 1.1vw;
+
+}
+.board-experience h1{
+    padding-bottom: 1.2vh;
+    font-size: 4vw;
+}
+.board-experience p{
+font-size: 2.2vh;
+}   
+
+.board-project{
+  width: 26vw;
+    border-right: 00.2vw solid white;
+    padding-right: 0vw;
+    margin-right: 1.1vw;
+}
+
+.board-project h1{
+    font-size: 2.7vh;
+    padding-bottom: 1.1vh;
+   }
+  .board-project p{
+  width: 30vw;
+    font-size: 3vw;
+  }
+  .board-client{
+   
+    padding-right: 0.9vw;
+    
+  }
+  .board-client h1{
+    font-size: 3vh;
+    padding-bottom: 1.1vh;
+  }
+  .board-client p{
+    font-size: 2.5vh;
+    width:25vw;
+
+  }  
+
+  /* footer */
+  
+.footer{
+  display: flex;
+  flex-direction: column;
+   height: auto;
+
+}
+
+.profile {
+  height: auto;
+  width: auto;
+justify-content: center;
+align-items: center;
+}
+.profile img{
+width:9vw;
+height:7vh;
+}
+.profile p{
+font-size: 4vw;
+padding-top: 2vh;
+}
+
+.copyRight{
+  height: auto;
+  margin: auto;
+  justify-content: center;
+}
+.copyRight p{
+  font-size: 3vw;
+  padding-top: 1.1vh;
+}
+.socialMEd{
+  display: inline-flex;
+  gap: 5vw;
+  margin: auto;
+ justify-content: center;
+}
+.socialMEd img{
+  height: 2vh;
+  width: 2vw;
+}
+
+.personal-board{
+  display: inline-flex;
+  flex-direction: column;
+  width: 50%;
+  min-height: 31vh;
+  padding: 2vh;
+  background-color: #A387AF;
+  margin:6vh 6vw 4vh 25vw;
+ }
+
+  
+.board-experience{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 0vw;
+  border-bottom: 0.3vw solid white;
+  padding-bottom: 1vh;
+  margin-bottom: 1.1vh;
+
+}
+.board-experience h1{
+  font-size: 5vw;
+  padding-bottom: 1.5vh;
+}
+.board-experience p{
+font-size: 3vw;
+}   
+
+.board-project{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 0vw;
+  border-bottom: 0.3vw solid white;
+  padding-bottom: 1vh;
+  margin-bottom: 1.1vh;
+
+}
+
+.board-project h1{
+  font-size: 5vw;
+  padding-bottom: 1.5vh;
+ }
+.board-project p{
+  font-size: 3vw;
+}
+.board-client{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1vh;
+  margin-bottom: 1.1vh;
+
+}
+.board-client h1{
+  font-size: 5vw;
+  padding-bottom: 1.5vh;
+}
+.board-client p{
+  font-size: 3vw;
+
+}  
+
+.personal-pic{
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+}
+.personal-pic img{
+  width: 40vw;
+  height: 40vw;
+}
+
+
+
+}
+

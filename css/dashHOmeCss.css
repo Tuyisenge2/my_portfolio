@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+
+    background-color: #2C0143;
+    color:#ffffff;
+    font-family: sans-serif;
+    padding: 5%;
+   }
+   .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   }
+ 
+   .navBg {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #2C0143;
+    padding-top: 2%;
+   }
+   
+ .header{
+  display: flex;
+   }
+  
+   .menuButdiv {
+    display: none;
+    background-color: inherit;
+  }
+  
+  .menuButdiv button{
+  background-color: inherit;
+  border-color: #2C0143;
+  border: none;
+  }
+  
+  .menuButdiv button img{
+    width: 6vw;
+    height: 5vh;
+    filter: invert(1);
+  
+  }
+  
+   .menulis{
+    padding: 1% 0;
+    max-width: 750px;
+    width: 100%;
+    word-wrap: break-word;
+    letter-spacing: 0.1vw;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2%;
+   
+   }
+   .menulis a{
+  
+    font-size: 1rem;
+    text-decoration: none;
+   color:white;
+    font-weight: 800;
+   transition: color 0.8s ease;
+   padding: 1%;  
+  
+   }
+   .contactUSbg{    
+    background-color:#A387AF;
+   
+   }
+  
+   .header a:hover{
+    color: green;
+   
+  }
+  
+  #smallScreenMenu{
+  visibility: collapse;  
+  }
+ 
+
+.main{
+    display: flex;
+    width: 100%;
+   margin-top: 5%;
+}
+
+.content{
+
+    width: 100%;
+    background-color: #ffffff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.helloAdmin{
+    color: black;
+    width: 100%;
+    max-width: 423px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.helloAdmin h1{
+    font-size: clamp(12px,1.5vw,29px);   
+   }
+   .helloAdmin p{
+    font-size: clamp(12px,1vw,29px);   
+       letter-spacing: 0.2vw;
+        
+   }
+   
+.dashboardDiv {
+    width: 100%;
+    max-width: 423px;
+    height: 100%;
+        display: flex;
+    background-color: #2C0143;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboardDivheader{
+    display: flex;
+    width: 100%;
+    max-width: 90px;
+padding: 2%;
+
+}
+
+.dashboardDivheader img{
+width: 100%;
+min-height: 40px;
+height: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboardDivExample{  
+    display: flex;
+    flex-direction: column;
+padding: 3%;
+width: 100%;
+}
+.dashboardDivExample p{
+ color: gray;
+ font-size: clamp(5px,12vw,15px);
+ letter-spacing: .1rem;
+}
+.dashboardDivExample a{
+      background-color: #ffffff;
+    font-size: clamp(13px,1vw,25px);
+    text-decoration: none;
+    color: black;
+   max-width: 110px;
+   font-weight: 900;
+   padding: 2%;
+    width: 100%;
+    margin-top: 3%;
+
+}
+
+.dashboardDivExample h1{
+    font-size: 1.6vw;
+    padding-bottom: 1.9vh;
+    color: #2CEE9D;
+    padding-right: 1vw;
+    line-height: 2.5vh;
+}
+
+.sideBar{
+  width: 100%;
+  max-width:240px;
+  background-color: inherit;
+display: flex;
+flex-direction: column;
+gap:5%;
+background-color: rgb(25, 0, 35);
+padding: 2%;
+}
+
+
+.SideLink{
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  gap:5%;
+  max-width:140px;
+  width: 100%;
+
+}
+.Admin{
+  display: flex;
+}
+.Admin img{
+  height: 7vh;
+  width: 5vw;
+}
+.Admin p{
+  padding-top: 0.9vh;
+  line-height: 3vh;
+  font-size: clamp(9px,.8vw,24px);
+}
+
+
+.appli-text{
+  font-size: clamp(9px,.9vw,24px);}
+
+.SideLink a{
+  text-decoration: none;
+  color: white;
+  font-size: clamp(9px,1.1vw,24px);
+}
+.SideLink img{
+  min-height: 12px;
+  height: 2vh;
+  width: 100%;
+  max-width: 30px;
+}
+
+.selectedLink{
+  background-color: rgba(163, 135, 175, 0.45);
+  padding: 3%;
+
+}
+
+.footer{
+    display: flex;
+    gap: 11vw;
+    height: auto;
+    margin-top: 9vh;
+    margin-left: 23vw;
+}
+.profile{
+    display: inline-flex;
+      gap: 1vw;
+}
+.profile img{
+border-radius: 50%;
+height: 2.4vw;
+width: 2.4vw;
+}
+.profile p{
+font-size: 1.2vw;
+padding-top: 1vh;
+}
+
+.copyRight{
+    height: auto;
+}
+.copyRight p{
+    font-size: 1.2vw;
+    padding-top: 0.9vh;
+}
+
+.socialMEd{
+    display: inline-flex;
+    gap: 2vw;
+   justify-content: center;
+   align-items: center;
+   padding-left: 2vw;
+   padding-right: 2vw;
+  
+    background-color: #A387AF;
+    height: 8vh;
+  
+  }
+  .socialMEd img{
+    height: 2.4vh;
+    width: 2vw;
+  }
+  @media (max-width:792px) {
+
+    
+    .header{
+     display: flex;
+     flex-direction: column;
+      }
+      #smallScreenMenu{
+       visibility: visible;
+       display: flex;
+          margin-top: 1vh;
+          width: 100%;
+           gap: 2.7vw;
+         padding-bottom: 0.2vh;    
+         flex-direction: column;
+             }
+      
+           #smallScreenMenu a{
+      text-decoration: none;
+      color: #ffffff;
+            width: 30%;
+            padding-top: 1vh;
+            padding-left: 0.61vw;
+            font-size: 3vw;
+            min-height: 32px;
+      
+           }   
+         .menulis{
+          visibility: collapse;
+         display: none;
+        
+         }
+ 
+         .menuButdiv {
+           display: flex;
+           margin-bottom: 1vh;
+       
+         }
+   
+
+     
+  }
+  @media (max-width:665px) {
+
+
+.sideBar{
+  max-width: 50px;
+}
+.SideLink a p,.Admin p, .appli-text{
+  display: none;
+ }
+}
+
+@media (max-width:433px) {
+
+
+
+}

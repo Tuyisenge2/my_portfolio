@@ -1,0 +1,81 @@
+.sideBar{
+    width: 100%;
+    max-width:240px;
+    background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap:5%;
+  background-color: rgb(25, 0, 35);
+  padding: 2%;
+}
+
+
+.SideLink{
+    display: inline-flex;
+    min-height: 28px;
+    align-items: center;
+    gap:5%;
+    max-width:140px;
+    width: 100%;
+
+}
+.Admin{
+    display: flex;
+}
+.Admin img{
+    height: 7vh;
+    width: 5vw;
+}
+.Admin p{
+    padding-top: 0.9vh;
+    line-height: 3vh;
+    font-size: clamp(9px,.8vw,24px);
+}
+
+
+.appli-text{
+    font-size: clamp(9px,.9vw,24px);}
+
+.SideLink a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(9px,1.1vw,24px);
+}
+.SideLink img{
+    min-height: 12px;
+    height: 2vh;
+    width: 100%;
+    max-width: 30px;
+}
+
+.selectedLink{
+    background-color: rgba(163, 135, 175, 0.45);
+    padding: 3%;
+
+}
+
+@media (max-width:975px) {
+
+    .SideLink {
+        min-height: 68px;
+        height: 100%;
+        gap: 5%;
+        max-width: 200px;
+        width: 70%;
+    }
+    
+}
+
+@media (max-width:792px) {
+ 
+ .SideLink a p,.Admin p, .appli-text{
+      display: none;
+     }
+ .sideBar{
+     width: 15%;
+ }
+ .SideLink img{
+ width: 50%;
+ }
+}
+

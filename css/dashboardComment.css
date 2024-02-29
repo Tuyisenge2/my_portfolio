@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+
+    background-color: #2C0143;
+    color:#ffffff;
+    font-family: sans-serif;
+    padding: 5rem;
+   }
+   .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   }
+ 
+   .navBg {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #2C0143;
+    padding-top: 2%;
+   }
+   
+ .header{
+  display: flex;
+   }
+  
+   .menuButdiv {
+    display: none;
+    background-color: inherit;
+  }
+  
+  .menuButdiv button{
+  background-color: inherit;
+  border-color: #2C0143;
+  border: none;
+  }
+  
+  .menuButdiv button img{
+    width: 6vw;
+    height: 5vh;
+    filter: invert(1);
+  
+  }
+  
+   .menulis{
+    padding: 1% 0;
+    max-width: 750px;
+    width: 100%;
+    word-wrap: break-word;
+    letter-spacing: 0.1vw;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2%;
+   
+   }
+   .menulis a{
+  
+    font-size: 1rem;
+    text-decoration: none;
+   color:white;
+    font-weight: 800;
+   transition: color 0.8s ease;
+   padding: 1%;  
+  
+   }
+   .contactUSbg{    
+    background-color:#A387AF;
+   
+   }
+  
+   .header a:hover{
+    color: green;
+   
+  }
+  
+  #smallScreenMenu{
+  visibility: collapse;  
+  }
+ 
+
+.main{
+    display: flex;
+    width: 100%;
+  margin-top: 4%;
+   
+}
+
+.content{
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+
+
+}
+.helloAdmin{
+    color: black;
+    width: 100%;
+    max-width: 223px;
+    
+}
+.helloAdmin h1{
+    font-size: clamp(12px,1.5vw,29px);   
+   }
+   .helloAdmin p{
+    font-size: clamp(12px,1vw,29px);   
+       letter-spacing: 0.2vw;
+        
+   }
+   
+   .dashboardDiv {
+    width: 100%;
+    max-width:600px;
+    height: 100%;
+    min-height: 120px;
+     display: flex;
+    flex-direction: column;
+    background-color: #2C0143;
+    gap: 7%;
+    padding: 2%;
+   box-shadow: 10px 10px 5px gray;
+   margin-top: 2%;
+   
+
+   
+}
+.dashboardDivheader{
+    width: 100%;
+    display: flex;
+    gap: 1%;
+}
+.dashboardDivheader img{
+width: 100%;
+height: 1.2rem;
+max-width: 34px;
+}
+
+.dashboardDivheader p{
+font-size:clamp(7px,1vw,25px) ;
+
+}
+
+#for-filter {
+    display: flex;
+    gap: 12%;  
+    margin-left: 32%; 
+
+}
+#for-filter img{
+    max-width:25px;
+    width: 100% ;
+    min-height: 2px;
+   height: 1rem;   
+}
+#for-filter p{
+margin: 0;
+}
+
+
+.dashboardDivExample{
+    width: 90%;
+     display: flex;
+    gap: 3%;
+margin-top: 2.5%;
+
+}
+
+.dashboardDivExample h1{
+    font-size:clamp(7px,1.1vw,25px);
+
+}
+
+.dashboardDivExample p{
+    font-size:clamp(7px,.9vw,25px) ;
+   color: gray;
+}
+.dashboardDivExample button{
+    margin-left: 5%;
+    border: none;
+   width: 100%;
+   max-width: 50px;
+   padding: 1%;
+    color: white;
+background-color: #698482;
+
+}
+.selectedLink{
+    background-color: rgba(163, 135, 175, 0.45);
+    border-radius: 1.3vw;
+}
+
+.footer{
+    display: flex;
+    gap: 11vw;
+    height: auto;
+    margin-top: 9vh;
+    margin-left: 23vw;
+}
+.profile{
+    display: inline-flex;
+      gap: 1vw;
+}
+.profile img{
+border-radius: 50%;
+height: 2.4vw;
+width: 2.4vw;
+}
+.profile p{
+font-size: 1.2vw;
+padding-top: 1vh;
+}
+
+.copyRight{
+    height: auto;
+}
+.copyRight p{
+    font-size: 1.2vw;
+    padding-top: 0.9vh;
+}
+
+.socialMEd{
+    display: inline-flex;
+    gap: 2vw;
+   justify-content: center;
+   align-items: center;
+   padding-left: 2vw;
+   padding-right: 2vw;
+  
+    background-color: #A387AF;
+    height: 8vh;
+  
+  }
+  .socialMEd img{
+    height: 2.4vh;
+    width: 2vw;
+  }
+  @media (max-width:792px) {
+
+    
+    .header{
+     display: flex;
+     flex-direction: column;
+      }
+      #smallScreenMenu{
+       visibility: visible;
+       display: flex;
+          margin-top: 1vh;
+          width: 100%;
+           gap: 2.7vw;
+         padding-bottom: 0.2vh;    
+         flex-direction: column;
+             }
+      
+           #smallScreenMenu a{
+      text-decoration: none;
+      color: #ffffff;
+            width: 30%;
+            padding-top: 1vh;
+            padding-left: 0.61vw;
+            font-size: 3vw;
+            height: 4vh;
+      
+           }   
+         .menulis{
+          visibility: collapse;
+         display: none;
+        
+         }
+ 
+         .menuButdiv {
+           display: flex;
+           margin-bottom: 1vh;
+       
+         }
+   
+ 
+     .SideLink a p,.Admin p, .appli-text{
+ 
+          display: none;
+     }
+ .sideBar{
+     width: 15%;
+ }
+ .SideLink img{
+ width: 100%;
+ }
+ 
+     
+  }
+
+  @media (max-width:725px) {
+
+    .dashboardDivheader{
+        display: flex;
+        width: 70%;
+        gap: 11%;
+        margin-top:2%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+  }
+
+
+  
+
+.dashboardDivExample{
+    width: 90%;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 3%;
+}
+  }
+@media (max-width:626px) {
+
+    .dashboardDivExample button{
+    margin-left: 5%;
+   width: 18%;
+   
+
+}
+}
