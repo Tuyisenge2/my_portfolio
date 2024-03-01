@@ -94,7 +94,7 @@
    }
    .left-container{
     flex: 1.5;
-     background-image: url('/images/log/login.png');
+     background-image: url('images/log/login.png');
     background-size: cover; 
   background-position: center; 
   
