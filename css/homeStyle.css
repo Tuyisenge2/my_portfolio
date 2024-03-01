@@ -63,7 +63,7 @@ border: none;
  }
  .menulis a{
 
-  font-size: 1rem;
+  font-size: 1vw;
   text-decoration: none;
  color:white;
   font-weight: 800;
@@ -89,40 +89,45 @@ visibility: collapse;
 
    .Personal-container{
     display: flex;
-    gap: 1%;
-    min-height:500px;
-    width: 100%;
-    padding-top: 4%;
+    gap: 20px;
+     width: 100%;
+    padding-top: 40px;
    }
 
    .personal-Text{
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    justify-content: space-between;
     padding: 3% 0;
    }
-   .personal-Text h1{
-    font-size: 4rem;
+   .personal-Text-first h1{
+    font-size: 4.4vw;
 
    }
-   .personal-Text p{
-    font-size: 1rem;
-    line-height: 2.5rem; 
+   .personal-Text-first p{
+    margin-top: 10px;
+    font-size: 1.3vw;
+    line-height: 41px; 
     letter-spacing: 0.1rem;
+    margin-top: 4vh;
    }
    .personal-pic{
-    flex: 1;
-    padding: 3%;
+      flex: 1;
+      width: 100%;
+      max-width: 600px;
+      padding: 3% 0;
+     
 }
 .personal-pic img{
   width: 100%;
- height: 80;
-}
+  height: 100%;
+  object-fit: cover;
+ }
 
 
    .personal-board{
-    display: inline-flex;
+      display: inline-flex;
     min-height: 1rem;
     width: 100%;
     max-width: 31rem;
@@ -138,16 +143,11 @@ visibility: collapse;
     display: flex;
     flex-direction: column;
     border-right: 00.1vw solid white;
-
-
 }
 .board-experience h1{
     font-size: 2vw;
 }
-.board-experience p{
-font-size: 1rem;
-}   
-
+ 
 .board-project{
     display: flex;
     flex-direction: column;
@@ -160,8 +160,14 @@ font-size: 1rem;
 .board-project h1{
     font-size: 2vw;
    }
-  .board-project p{
-    font-size: 1rem;
+   .board-project p{
+    font-size: 1vw;
+    margin-top: 0;
+   }
+  .board-project p,.board-client p,.board-experience p{
+    font-size: 1vw;
+    margin-top: 4%;
+  
   }
   .board-client{
     display: flex;
@@ -173,10 +179,7 @@ font-size: 1rem;
   .board-client h1{
     font-size: 1.7vw;
   }
-  .board-client p{
-    font-size: 1rem;
-
-  }  
+ 
 
 
 .footer{
@@ -231,138 +234,34 @@ padding-top: 1vh;
 @media(max-width:1025px)
 {
 
-  .menulis{
-    margin-top: 2vh;
-    width: 100%;
-     gap: 0.4vw;
-  padding-bottom: 0.2vh;       
   
-   }
-
-  .menulis a{
-    width: 11vw;
-    padding-top: 1vh;
-    padding-left: 0.7vw;
-    font-size: 1.8vw;
-    height: 7vh;
-    font-weight: 900;
-   color:white;
-   }
+ 
     
      /*container*/
   
      .Personal-container{
       display: flex;
-      gap: 1.3vw;
-      height: 83.5vh;
-      width: 100%;
+       width: 100%;
      }
   
      .personal-Text{
-         gap: 1vh; 
-       padding-top: 6vh;
+       gap: 30px;
        }
-     .personal-Text{
-           gap: 2vh;
-     }
-     .personal-Text h1{
-      font-size: 5vw;
-  
-     }
-
+    
 
   /*stop*/
-
-   .personal-Text p{
-font-size: 1.7vw;
-   }
-   
-   .personal-board{
-    height: 12vh;
-    width: 27vw;
-    margin:auto;
-    padding: auto;
-    width: 40%;
-   }
-.board-experience{
-    border-right: 0.2vw solid white;
-    padding-right: 0.9vw;
-    margin-right: 1.1vw;
-
-}
-.board-experience h1{
-    padding-bottom: 1.2vh;
-}
-.board-experience p{
-font-size: 1.3vw;
-}   
-
-.board-project{
-    border-right: 00.2vw solid white;
-    padding-right: 0.1vw;
-    margin-right: 1.1vw;
-    width: 12vw;
-
-
-}
-
-.board-project h1{
-    font-size: 2.3vw;
-    padding-bottom: 0.5vh;
-   }
-  .board-project p{
-    font-size: 1.3vw;
-  }
-  .board-client{
-   width: 10vw;
-    padding-right: 0.9vw;
-    
-  }
-  .board-client h1{
-    font-size: 2.2vw;
-    padding-bottom: 1.1vh;
-  }
-  .board-client p{
-    font-size: 1.4vw;
-    min-width:6vw;
-
-  }  
-
-  .Personal-container{
-    height: auto;
-
-  }  
+ 
 
 }
 
 @media(max-width:746px)
 {
 
+  .Personal-container{
+    height: auto;
+    flex-direction: column;
 
-   
- .navBg {
-  width: 100%;
-  padding-top: 1vh;
-  
- }
- 
- .menulis{
-  margin-top: 2.2vh;
-  width: 100%;
- display: flex;
- gap: 0vw;
-padding-bottom: 0.1vh;       
-
- }
- 
- .menulis a{
-  width: 12vw;
-  padding-top: 0.5vh;
-  padding-left: 0.6vw;
-  font-size: 2vw;
-  height: 5vh;
-
- }
+  }  
  
  .personal-Text p{
   font-size: 1.7vw;
@@ -378,7 +277,6 @@ padding-bottom: 0.1vh;
   .board-experience{
       min-width:11vw;
       border-right: 0.3vw solid white;
-  
   }
   .board-experience h1{
       padding-bottom: 1.2vh;
@@ -423,10 +321,7 @@ padding-bottom: 0.1vh;
       min-width:5vw;
   
     }
-    .Personal-container{
-      height: auto;
-
-    }  
+   
 
 /* footer */
 
@@ -549,59 +444,6 @@ color: #ffffff;
    .personal-Text p{
 font-size: 3vw;
    }
-   
-   .personal-board{
-    height: 13vh;
-    width: 76vw;
-    padding: 2.3vh;
-    margin:4vh 11vh 3vh 0vh;
-
-   }
-.board-experience{
-    min-width:17vw;
-    border-right: 0.2vw solid white;
-    padding-right: 0.9vw;
-    margin-right: 1.1vw;
-
-}
-.board-experience h1{
-    padding-bottom: 1.2vh;
-    font-size: 4vw;
-}
-.board-experience p{
-font-size: 2.2vh;
-}   
-
-.board-project{
-  width: 26vw;
-    border-right: 00.2vw solid white;
-    padding-right: 0vw;
-    margin-right: 1.1vw;
-}
-
-.board-project h1{
-    font-size: 2.7vh;
-    padding-bottom: 1.1vh;
-   }
-  .board-project p{
-  width: 30vw;
-    font-size: 3vw;
-  }
-  .board-client{
-   
-    padding-right: 0.9vw;
-    
-  }
-  .board-client h1{
-    font-size: 3vh;
-    padding-bottom: 1.1vh;
-  }
-  .board-client p{
-    font-size: 2.5vh;
-    width:25vw;
-
-  }  
-
   /* footer */
   
 .footer{
@@ -650,11 +492,10 @@ padding-top: 2vh;
   display: inline-flex;
   flex-direction: column;
   width: 50%;
-  min-height: 31vh;
-  padding: 2vh;
+   min-height:250px ;
+  padding: 12px;
   background-color: #A387AF;
-  margin:6vh 6vw 4vh 25vw;
- }
+  }
 
   
 .board-experience{
@@ -714,17 +555,14 @@ font-size: 3vw;
 
 .personal-pic{
   flex: 1;
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
-   justify-content: center;
-   align-items: center;
  
 }
 .personal-pic img{
-  width: 40vw;
-  height: 40vw;
-}
+  width: 100%;
+ }
 
 
 

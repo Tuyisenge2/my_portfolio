@@ -290,6 +290,33 @@
     </div>
 </div> 
 
+
+<div class="EditBlogDiv">
+  <div action="" class="right-container-form">
+    <p>Add an Blog </p>
+<label for="">Blog Name*</label>
+<span for="" id="blogNAmeErr" class="errorDisappear"></span>
+<input type="text" class="right-container-form-input" placeholder="" name="" id="editblogName">
+
+<label for="">Blog summary</label>
+<span for="" id="blogSumErr" class="errorDisappear"> </span>
+<input type="text" class="right-container-form-input" placeholder="" name="" id="editblogSummary">
+
+
+<label for="">Blog description*</label>
+<span for="" id="blogdescErr" class="errorDisappear"></span>
+<textarea id="EditblogDescription">
+</textarea>          
+<label for="">Blog Image*</label>
+<input type="file" class="image-input" id="myImage">
+<button onclick="validateForm();add()" id="myBut"> Edit <img src="images/dashHome/add.svg" alt=""></button>
+
+</div>
+
+</div>
+
+
+
     <div class="footer">
         <div class="profile">
             <img src="images/infopic2.jpg" alt="">
@@ -325,7 +352,8 @@
   </script>
   <script src="menubut.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/sliderinblogDashbo.js"></script>
+   <script src="js/sliderinblogDashbo.js"></script>
+   <script src="js/fetchdashBLog.js"></script>
   <script src="js/dashboardvalid.js"></script>
   <script src="js/addblog.js"></script>
 </body>

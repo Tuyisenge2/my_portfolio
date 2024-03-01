@@ -384,6 +384,22 @@ color: white;
    }
 /*  */
 
+
+.EditBlogDiv{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 120;
+    background-color: beige;
+    height: 83vh;
+    display: none;
+}
+.EditBlogDiv textarea{
+height: 123px;
+display: none;
+
+}
+
 .footer{
     display: flex;
     gap: 11vw;

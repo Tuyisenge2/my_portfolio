@@ -63,7 +63,7 @@ border: none;
  }
  .menulis a{
 
-  font-size: 1rem;
+  font-size: 1vw;
   text-decoration: none;
  color:white;
   font-weight: 800;
@@ -90,6 +90,7 @@ visibility: collapse;
    /*container*/
 
 .contact-Container{
+
   margin-Top: 3%;
     background-color: white;
     display: flex;
@@ -98,6 +99,7 @@ visibility: collapse;
   gap: 5%;
 }
 .contact-address-container{
+  flex: 1;
     display: flex;
     flex-direction: column;
     background-color: rgb(240, 240, 240);
@@ -125,7 +127,7 @@ font-weight: bold;
 margin-top: 1%;
    }
 .address{
-  margin-top: 20%;
+  margin-top: 35px;
     display: flex;
     flex-direction: column;
     
@@ -147,6 +149,7 @@ margin-top: 1%;
     font-weight: 600;
    }
    .quest-form{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -238,18 +241,34 @@ padding-top: 1vh;
 @media (max-width:670px) {
     
 .contact-Container{
-display: flex;
-    flex-direction: column;
+     flex-direction: column;
     height: auto;
-    padding-left: 0vw;
-    padding-top: 2vh;
+    padding: 2vh;
     gap: 2vh;
 }
 .contact-address-container{
     width: 90%;
     margin: auto;
+    }
+    .address {
+      width: 100%;
+      max-width: 100px;
+         border: 2px solid green;
+      margin-top: 15px;
     
+  }
+
+    
+.cont-title p {
+  font-size:2vw
 }
+
+
+.cont-add h2 {
+    font-size:  1.5vw;
+  }
+
+
 .question-form-container{
     width: 90%;
     margin: auto;
@@ -288,4 +307,4 @@ display: flex;
       }
 
 
-}
+    }

@@ -223,16 +223,24 @@ width: 100%;
 }
 
 .content-text{
-  flex: 1;
+  flex:1;
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 15px;
+  padding: 30px 10px;
+
 }
 .content-text p{
-  line-height: 5vh;
-  font-size: 2.5vw;
+  line-height: 7vh;
+  font-size: 1.8vw;
 }
-
+.content-but {
+  margin-top: 20px;
+ 
+}
+.content-but button{
+  font-size: 1.6vw;
+}
 /* footer */
 
 
@@ -281,7 +289,9 @@ padding-top: 2vh;
 @media(max-width:440px)
 {
 
-  
+  body{
+    padding: 10%;
+  }
 
  
    .header{
@@ -362,9 +372,7 @@ width: 100%;
 }
 
 .content-but button{
-    height: 6vh;
-    width: 25vw;
-    font-size: 3.4vw;
+      font-size: 1.8vw;
 }
 
 
