@@ -180,11 +180,11 @@ max-width: 240px;
      gap: .1%;
      min-height: 400px;     
 }
+
 .single-blog-card{
-    height:auto;
+    height: 100%;
     width: 100%;
     max-width: 250px;
-    min-height: 130px;
     background-color:#A387AF;
     overflow: hidden;
     display: inline-flex;
@@ -195,7 +195,7 @@ max-width: 240px;
 }
 
 .blog-pic{
-    min-height: 30px;
+    height: 140px;
 }
 .blog-pic img{
     border-top-left-radius: 3vh;
@@ -206,21 +206,28 @@ max-width: 240px;
 }
 
 .blog-desrciption{
-     height: auto;
+     max-height: 170px;
+     height: 100%;
       padding:4%;
       display: flex;
       flex-direction: column;
      
 
 }
-.blog-desrciption h2{ 
+.blogHeader-sum{
+    height: 50%;
+    overflow: hidden;
+    width: 100%;  
+
+}
+.blogHeader-sum h2{ 
  font-size: 1.6vw;
  color: lightgoldenrodyellow;
     font-weight: 800;
 }
-.blog-desrciption p{    
+.blogHeader-sum p{    
     font-size: clamp(9px, 0.7vw,34px);
-   margin-top: 1%;
+   margin-top: 2px;
    line-height: .9rem;
 }
 
@@ -238,7 +245,7 @@ max-width: 240px;
     gap: 0.3vw;
 }
 .blog-like p,.blog-comment p{
- font-size: clamp(11px,0.7vw,34px)
+ font-size: clamp(11px,0.7vw,34px);
 }
 .blog-like img{
  height: 2vh;
@@ -292,7 +299,12 @@ max-width: 240px;
     gap: 0.9vh;
     
 }
-.edi-del-but button{
+.edi-del-but a{
+    padding-left: 26px
+}
+.edi-del-but button,.edi-del-but a{
+
+    text-decoration: none;
     color: white;
     height: 3vh;
     min-height: 20px;

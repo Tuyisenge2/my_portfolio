@@ -1,10 +1,13 @@
 let AddToComment=document.querySelector('.AddToComment');
-let storage=localStorage.getItem('comment');
-function storeCom()
-{  
+let storage=localStorage.getItem('article');
+const url= new URLSearchParams(window.location.search);
+    const id=url.get('id');
+
+function storeCom() {
+    
+
     let arr=[];
     let commentValue=document.getElementById('commentValue').value;
-    console.log(commentValue)
 if(commentValue!=="")
 {
    
@@ -19,16 +22,23 @@ if(commentValue!=="")
 }catch(error)
    {}
     }
-    arr.push(commentValue);
-    localStorage.setItem('comment',JSON.stringify(arr))
-}}
+    arr[id].BComment.push(commentValue);
+    localStorage.setItem('article',JSON.stringify(arr))
+    console.log(commentValue,"  ",arr[id].BComment,"  ",id);
+
+}
+location.reload();
+ 
+}
+
+
 let arr=JSON.parse(storage);
 let displaycomment=document.querySelector('.displaycomment');
 
 let allcomment='';
 
-arr.forEach(item => {
-
+arr.forEach((item,index) => {
+    arr[index].BComment.forEach(i => {
 allcomment+=`
 <div class="comment-section Hr-line-upper  Hr-line-lower">
 <div class="user">
@@ -36,7 +46,7 @@ allcomment+=`
     <p>USER 1</p>
 </div>
 <div class="comment">
-    <p>${item}</p>
+    <p>${i}</p>
 </div>
 
 <div class="blog-like-comment">
@@ -58,6 +68,8 @@ allcomment+=`
     </div>
 </div>
 </div>   `;
+
+})
 
 });
 

@@ -53,7 +53,6 @@ if (document.querySelector('.blog-card-displ')) {
 function singleBlog(){
 const url= new URLSearchParams(window.location.search);
 const id=url.get('id');
-    
 
   let fetchArr1=localStorage.getItem('article');
   let fetchArr2=JSON.parse(fetchArr1)

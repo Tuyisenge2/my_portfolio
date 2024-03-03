@@ -82,36 +82,12 @@
     <div class="content">
         <form >
   <div class="content-header">
-   <h1>Blog List</h1>  
+   <h1>Blog Edit</h1>  
    <label for=""> search </label> 
    <spann id="dashSearch"> <button><img src="images/blog/search.svg" alt=""> </button> <input type="text" placeholder="">   </span>
      </div> </form>
      <div class="blog-cards swiper">
-        <div class="previous-icon  swiper-button-prev">
-
-        </div>
-          <div class="blog-for-swiper"> 
-        
-           <div class="blog-card-displ swiper-wrapper">
-                                     
-                 
-                                                                
-          
-               
-             
-                         
-            </div>
-        
-      </div>
-      <div class="swiper-pagination"></div>
-      
-      <div class="swiper-scrollbar"></div>
-                
-  <div class="next-icon swiper-button-next">
-
-  </div>
-    </div>
-
+    
 
   <div class="createNewBlog">
     <form action="" class="right-container-form">
@@ -131,7 +107,7 @@
   </textarea>          
   <label for="">Blog Image*</label>
   <input type="file" class="image-input" id="myImage">
-<button onclick="validateForm();add()" id="myBut"> Add <img src="images/dashHome/add.svg" alt=""></button>
+<button onclick="validateForm();SaveEdit() " id="myBut"> Save <img src="images/dashHome/add.svg" alt=""></button>
     
 </form>
 </div>
@@ -142,29 +118,6 @@
 </div> 
 
 
-<div class="EditBlogDiv">
-  <div action="" class="right-container-form">
-    <p>Add an Blog </p>
-<label for="">Blog Name*</label>
-<span for="" id="blogNAmeErr" class="errorDisappear"></span>
-<input type="text" class="right-container-form-input" placeholder="" name="" id="editblogName">
-
-<label for="">Blog summary</label>
-<span for="" id="blogSumErr" class="errorDisappear"> </span>
-<input type="text" class="right-container-form-input" placeholder="" name="" id="editblogSummary">
-
-
-<label for="">Blog description*</label>
-<span for="" id="blogdescErr" class="errorDisappear"></span>
-<textarea id="EditblogDescription">
-</textarea>          
-<label for="">Blog Image*</label>
-<input type="file" class="image-input" id="myImage">
-<button onclick="validateForm();add()" id="myBut"> Edit <img src="images/dashHome/add.svg" alt=""></button>
-
-</div>
-
-</div>
 
 
 
@@ -204,8 +157,8 @@
   <script src="menubut.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
    <script src="js/sliderinblogDashbo.js"></script>
-   <script src="js/fetchdashBLog.js"></script>
-  <script src="js/dashboardvalid.js"></script>
-  <script src="js/addblog.js"></script>
+   <script src="js/dashboardvalid.js"></script>
+   <script src="js/editdashboardBlog.js"></script>
+ 
 </body>
 </html>
