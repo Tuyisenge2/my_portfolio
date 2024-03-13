@@ -136,35 +136,53 @@
   }
 .blog-like-comment{
     display: flex;
-    gap:4%;
-    margin-top: 1%;
-
+    gap:20px;
 }
 .blog-like,.blog-comment{
-   
     display: flex;
-    gap: 1%;
+    gap: 3px;
 
+}
+.blog-comment{
+  display: flex;
+  gap: 3px;
+  
+ 
 }
 .blog-like p,.blog-comment p{
   font-size: clamp(0px,100%,13px);
 }
 .blog-like img{
 
-  width: clamp(0px,100%,15px);
+  width: clamp(0px,100%,16px);
 
 }
 .blog-comment img{
 
-  width: clamp(0px,100%,10px);
+  width: clamp(0px,100%,9px);
   
   }
 
 .comment-section{
 display: flex;
 flex-direction: column;
-
 }
+.like-icon{
+  display: flex;
+}
+.like-icon button{
+  width: 100%;
+   max-width: 30px;
+ background-color: inherit;
+ border: none;
+ }
+.White-red-icon{
+max-width: 14px;
+width: 100%;
+display: none;
+}
+ 
+
 .user{
   display: flex;
   gap: 0.5vw;

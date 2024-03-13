@@ -52,7 +52,7 @@ allcomment+=`
 <div class="blog-like-comment">
 <div class="blog-like">
 <div class="like-nbr-count">
-    <p>4k</p>
+    <p></p>
 </div>
 <div class="like-icon">
     <img src="images/blog/heart red.svg" alt="">
@@ -60,7 +60,7 @@ allcomment+=`
     </div>
     <div class="blog-comment">
         <div class="comment-nbr-count">
-        <p>45</p>
+        <p>0</p>
         </div>
         <div class="comment-icon">
             <img src="images/blog/Vector.svg" alt="">

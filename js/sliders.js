@@ -1,7 +1,7 @@
 
 var swiper = new Swiper(".blog-for-swiper", {
   slidesPerView: 3,
-  spaceBetween:79,
+  spaceBetween:10,
   loop:true,
   fade:true,
   grabCursor: true,
@@ -21,17 +21,17 @@ var swiper = new Swiper(".blog-for-swiper", {
     clickable: true,
     dynamicBullets:true,
   },
-  breakpoints:{
-   0:{
-  slidesPerView: 3,
-   },
-   520:{
-  slidesPerView: 3,
 
-   },
-   920:{
-  slidesPerView: 3,
+ breakpoints:{ 
+  0:{
+slidesPerView: 1,
+    },
+    520:{
+      slidesPerView: 2,
+          },
+    950:{
+     slidesPerView: 3,
+       }
 
-   }
-  },
+  }
 });

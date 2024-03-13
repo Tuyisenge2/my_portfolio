@@ -92,7 +92,7 @@
 }
 
 .content{
-
+     max-width: 800px;
     width: 100%;
     background-color: #ffffff;
     height: auto;
@@ -127,17 +127,7 @@
     margin-right: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 .dashboardDivheader{
     display: flex;
     width: 100%;
@@ -152,24 +142,6 @@ min-height: 40px;
 height: 40px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .dashboardDivExample{  
     display: flex;
     flex-direction: column;
@@ -227,12 +199,16 @@ padding: 2%;
   display: flex;
 }
 .Admin img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 7vh;
   width: 5vw;
 }
 .Admin p{
-  padding-top: 0.9vh;
-  line-height: 3vh;
+  display: flex;
+   align-items: center;
+  line-height: 15px;
   font-size: clamp(9px,.8vw,24px);
 }
 
@@ -254,7 +230,7 @@ padding: 2%;
 
 .selectedLink{
   background-color: rgba(163, 135, 175, 0.45);
-  padding: 3%;
+  
 
 }
 
@@ -263,7 +239,7 @@ padding: 2%;
     gap: 11vw;
     height: auto;
     margin-top: 9vh;
-    margin-left: 23vw;
+    
 }
 .profile{
     display: inline-flex;
@@ -326,7 +302,7 @@ padding-top: 1vh;
             width: 30%;
             padding-top: 1vh;
             padding-left: 0.61vw;
-            font-size: 3vw;
+         
             min-height: 32px;
       
            }   
@@ -341,6 +317,13 @@ padding-top: 1vh;
            margin-bottom: 1vh;
        
          }
+
+         .sideBar{
+          width: 100%;
+          max-width:140px;
+         gap:5%;
+        }
+        
    
 
      
@@ -354,10 +337,20 @@ padding-top: 1vh;
 .SideLink a p,.Admin p, .appli-text{
   display: none;
  }
+ .SideLink {
+  justify-content: center;
 }
 
-@media (max-width:433px) {
 
+}
 
+@media (max-width:555px) {
+  .dashboardDiv {
+ max-width:390px;
+
+  }
+  .content{
+padding: 6%;
+  }
 
 }

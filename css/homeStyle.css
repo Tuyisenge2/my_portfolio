@@ -9,7 +9,7 @@ body{
   background-color: #2C0143;
   color:#ffffff;
   font-family: sans-serif;
-  padding: 5rem;
+  padding: 5%;
  }
 
  .container{
@@ -123,6 +123,7 @@ visibility: collapse;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 50%;
  }
 
 
@@ -230,29 +231,7 @@ padding-top: 1vh;
   width: 2vw;
 }
 
-
-@media(max-width:1025px)
-{
-
-  
  
-    
-     /*container*/
-  
-     .Personal-container{
-      display: flex;
-       width: 100%;
-     }
-  
-     .personal-Text{
-       gap: 30px;
-       }
-    
-
-  /*stop*/
- 
-
-}
 
 @media(max-width:746px)
 {
@@ -265,6 +244,7 @@ padding-top: 1vh;
  
  .personal-Text p{
   font-size: 1.7vw;
+  line-height: 22px;
      }
      
      .personal-board{
@@ -425,11 +405,7 @@ color: #ffffff;
 
      /*container*/
     
-     .personal-Text{
-         gap: 0.4vh; 
-       padding-top: 6vh;
-       padding-right: 8vw;
-       }
+    
      .personal-Text{
            gap: 2vh;
      }
@@ -437,13 +413,15 @@ color: #ffffff;
       font-size: 5.5vw;
   
      }
+     .personal-Text p {
+      font-size: 2.5vw;
+      line-height: 22px;
+  }
 
 
   /*stop*/
 
-   .personal-Text p{
-font-size: 3vw;
-   }
+  
   /* footer */
   
 .footer{
@@ -489,11 +467,11 @@ padding-top: 2vh;
 }
 
 .personal-board{
-  display: inline-flex;
-  flex-direction: column;
-  width: 50%;
+   width: 100%;
+   max-width: 200px;
+   flex-wrap: wrap;
    min-height:250px ;
-  padding: 12px;
+  padding: 2%;
   background-color: #A387AF;
   }
 
@@ -501,12 +479,13 @@ padding-top: 2vh;
 .board-experience{
   
   width: 100%;
+  max-width: 12rem;
   display: flex;
   flex-direction: column;
   border-right: 0vw;
   border-bottom: 0.3vw solid white;
-  padding-bottom: 1vh;
-  margin-bottom: 1.1vh;
+  /* padding-bottom: 1vh;
+  margin-bottom: 1.1vh; */
 
 }
 .board-experience h1{
@@ -524,8 +503,8 @@ font-size: 3vw;
   flex-direction: column;
   border-right: 0vw;
   border-bottom: 0.3vw solid white;
-  padding-bottom: 1vh;
-  margin-bottom: 1.1vh;
+  /* padding-bottom: 1vh;
+  margin-bottom: 1.1vh; */
 
 }
 
@@ -540,13 +519,13 @@ font-size: 3vw;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 1vh;
-  margin-bottom: 1.1vh;
+  /* padding-bottom: 1vh;
+  margin-bottom: 1.1vh; */
 
 }
 .board-client h1{
   font-size: 5vw;
-  padding-bottom: 1.5vh;
+  
 }
 .board-client p{
   font-size: 3vw;
@@ -568,3 +547,9 @@ font-size: 3vw;
 
 }
 
+@media (max-width:321px){
+  .personal-Text p {
+    font-size: 4vw;
+}
+
+}

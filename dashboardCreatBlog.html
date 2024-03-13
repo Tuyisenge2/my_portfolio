@@ -86,32 +86,30 @@
    <label for=""> search </label> 
    <spann id="dashSearch"> <button><img src="images/blog/search.svg" alt=""> </button> <input type="text" placeholder="">   </span>
      </div> </form>
-     <div class="blog-cards swiper">
-        <div class="previous-icon  swiper-button-prev">
+   
 
-        </div>
-          <div class="blog-for-swiper"> 
-        
-           <div class="blog-card-displ swiper-wrapper">
-                                     
-                 
-                                                                
-          
-               
-             
-                         
-            </div>
-        
-      </div>
-      <div class="swiper-pagination"></div>
-      
-      <div class="swiper-scrollbar"></div>
-                
-  <div class="next-icon swiper-button-next">
+  <div class="createNewBlog">
+    <form action="" class="right-container-form">
+        <p>Add an Blog </p>
+   <label for="">Blog Name*</label>
+   <span for="" id="blogNAmeErr" class="errorDisappear"></span>
+  <input type="text" class="right-container-form-input" placeholder="" name="" id="blogName">
+   
+  <label for="">Blog summary</label>
+  <span for="" id="blogSumErr" class="errorDisappear"> </span>
+ <input type="text" class="right-container-form-input" placeholder="" name="" id="blogSummary">
 
-  </div>
-    </div>
 
+  <label for="">Blog description*</label>
+  <span for="" id="blogdescErr" class="errorDisappear"></span>
+  <textarea id="blogDescription">
+  </textarea>          
+  <label for="">Blog Image*</label>
+  <input type="file" class="image-input" id="myImage">
+<button onclick="validateForm();add()" id="myBut"> Add <img src="images/dashHome/add.svg" alt=""></button>
+    
+</form>
+</div>
     </div>
         
 
@@ -164,7 +162,23 @@
     </div>  
 
 </div>
+<script>
+    tinymce.init({
+      selector: 'textarea',
 
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
+toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+   
+
+tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ],
+      ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+    });
+  </script>
   <script src="menubut.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
    <script src="js/sliderinblogDashbo.js"></script>

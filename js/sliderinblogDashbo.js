@@ -20,6 +20,19 @@ var swiper = new Swiper(".blog-for-swiper", {
       el: ".swiper-pagination",
       clickable: true,
       dynamicBullets:true,
+    }
+,
+breakpoints:{ 
+  0:{
+slidesPerView: 1,
     },
+    520:{
+      slidesPerView: 2,
+          },
+    950:{
+     slidesPerView: 3,
+       }
+
+  }
   });
   

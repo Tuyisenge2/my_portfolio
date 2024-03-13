@@ -1,10 +1,7 @@
 let fetchArr1=localStorage.getItem('article');
-let fetchArr2=JSON.parse(fetchArr1)
+let fetchArr2=JSON.parse(fetchArr1);
  let blogSwiper=document.querySelector('.blog-card-displ');
  let DashblogSwiper=document.querySelector('.dash-blog-card-displ');
-
-
-
 let  blog='';
 function allBlog(){
   
@@ -51,11 +48,10 @@ if (document.querySelector('.blog-card-displ')) {
 
 
 function singleBlog(){
-const url= new URLSearchParams(window.location.search);
+  const url= new URLSearchParams(window.location.search);
 const id=url.get('id');
-
-  let fetchArr1=localStorage.getItem('article');
-  let fetchArr2=JSON.parse(fetchArr1)
+console.log(id)
+ 
       let contentblog=document.querySelector('.cont-blog-text');
       let cont=`
       <h1>${fetchArr2[id].name}</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
@@ -122,4 +118,29 @@ const id=url.get('id');
  if(document.querySelector('.dash-blog-card-displ')){
   DashBLog();
  }
+  function commentNBr(){
+    const url= new URLSearchParams(window.location.search);
+const id=url.get('id');
+let fetchArr1=localStorage.getItem('article');
+let fetchArr2=JSON.parse(fetchArr1)
+let commentNbrCount= document.querySelector('.comment-nbr-count');
+commentNbrCount.innerHTML= `${fetchArr2[id].BComment.length}`
+  }
+  if (document.querySelector('.comment-nbr-count')) {
+    commentNBr();
+  }
   
+  function likingBlog(){
+    let likeNbrCount =document.querySelector('.like-nbr-count');
+     let UnlikeBut= document.querySelector('.White-red-icon');
+     let i=1;
+        if( !UnlikeBut.style.display ||  UnlikeBut.style.display==='none'){
+          UnlikeBut.style.display='flex';
+          likeNbrCount.innerHTML=i;
+
+    }
+      else {
+        UnlikeBut.style.display='none';
+       }
+
+      }

@@ -9,7 +9,7 @@
     background-color: #2C0143;
     color:#ffffff;
     font-family: sans-serif;
-    padding: 5rem;
+    padding: 5%;
    }
    .container{
     width: 100%;
@@ -100,14 +100,14 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 1vh;
-color: black;
-padding: 2%;
-
+   color: black;
+padding: 2.5%;
 }
 
 .content-header{
     display: flex;
+    align-items: center;
+    
      
 
 }
@@ -128,12 +128,14 @@ padding: 2%;
     border-radius: 1vw;
     max-width: 276px;
     width: 100%;
+    align-items: center;
 }
 
 #dashSearch button{
     background-color: gray;
     border: none;
     padding-right: 1%;
+    
 
 }
 #dashSearch img{
@@ -152,7 +154,66 @@ background-color: inherit;
 width: 100%;
 max-width: 240px;
 }
+.sideBar{
+    width: 100%;
+    max-width:240px;
+    background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap:22px;
+  background-color: rgb(25, 0, 35);
+  padding: 2%;
+  
+  
+}
 
+.SideLink{
+    display: inline-flex;
+    min-height: 28px;
+    align-items: center;
+    gap:5%;
+    max-width:140px;
+    width: 100%;
+  
+  }
+  .Admin{
+    display: flex;
+  }
+  .Admin img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 5vw;
+  }
+  .Admin p{
+    display: flex;
+     align-items: center;
+    line-height: 15px;
+    font-size: clamp(9px,.8vw,24px);
+  }
+  
+  
+  .appli-text{
+    font-size: clamp(9px,.9vw,24px);}
+  
+  .SideLink a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(9px,1.1vw,24px);
+  }
+  .SideLink img{
+    min-height: 12px;
+    height: 2vh;
+    width: 100%;
+    max-width: 30px;
+  }
+  
+  .selectedLink{
+    background-color: rgba(163, 135, 175, 0.45);
+    
+  
+  }
 
 
 .blog-cards{
@@ -457,6 +518,18 @@ padding-top: 1vh;
     height: 2.4vh;
     width: 2vw;
   }
+  @media (max-width:815px) {
+.content{
+  padding: 5% 2%;
+}
+.sideBar{
+  padding: 5% 2%;
+max-width: 145px;
+}
+.right-container-form label {
+  font-size: 1.5vw;
+}
+  }
  
 @media (max-width:670px) {
     
@@ -509,6 +582,51 @@ display: flex;
         margin-bottom: 1vh;
     
       }
+      .sideBar{
+        max-width: 50px;
+      }
+      .SideLink a p,.Admin p, .appli-text{
+        display: none;
+       }
+       .SideLink {
+        justify-content: center;
+      }
+      .content-header label {
 
+        font-size: 1.6vw;
+      }
 
 }
+
+@media (max-width:470px) {
+  .content{
+    padding: 8% 2%;
+  }
+  .sideBar{
+    padding: 8% 2%;
+  }
+  .content-header label {
+    font-size: 2.3vw;
+    margin-left: 10%;
+}
+.content-header h1 {
+  font-size:2.4vw;
+}
+  
+
+#dashSearch {
+  
+    height: 100%;
+    min-height: 22px;
+    padding: 0% 2%;
+    border-radius: 1vw;
+    max-width: 180px;
+    width: 100%;
+    align-items: center;
+}
+.right-container-form label {
+  font-size: 2.4vw;
+}
+
+}
+
