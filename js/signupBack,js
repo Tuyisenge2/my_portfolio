@@ -1,0 +1,7 @@
+document.getElementById('signUpForm')
+.addEventListener('submit',signupFun());
+
+const signupFun =()=>{
+    const myForm=document.getElementById('signUpForm')
+const myData=new FormData('myForm');
+}

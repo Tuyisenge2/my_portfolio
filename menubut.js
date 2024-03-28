@@ -1,7 +1,13 @@
+ 
+function toggleMenu() {
+    var smallScreenMenu = document.getElementById("smallScreenMenu");
+    var menuButtonImage = document.getElementById("menubut");
 
-    function toggleMenu() {
-               var smallScreenMenu = document.getElementById("smallScreenMenu");
-               smallScreenMenu.style.display = (smallScreenMenu.style.display === "none") ? "flex" : "none";
-           }
-         
-     
+    if (smallScreenMenu.style.display === "none" || smallScreenMenu.style.display === "") {
+        smallScreenMenu.style.display = "flex";
+        menuButtonImage.src = "images/cancelBut.svg"; 
+    } else {
+        smallScreenMenu.style.display = "none";
+        menuButtonImage.src = "images/bars-solid.svg"; 
+    }
+}

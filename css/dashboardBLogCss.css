@@ -275,6 +275,17 @@ max-width: 240px;
      
 
 }
+.addbloglink{
+  margin-inline-start: 12rem;
+  background-color: #2C0143;
+  color: white;
+  text-decoration: none; 
+  font-size:  calc(0.5rem + 1vw);
+padding: 1%;
+
+}
+
+
 .blogHeader-sum{
     height: 50%;
     overflow: hidden;

@@ -18,7 +18,7 @@
         <nav class="navBg">
 
             <div class="header">
-             <div class="menuButdiv">  <button onclick=" toggleMenu()">  <img src="images/bars-solid.svg" alt=""></button>
+             <div class="menuButdiv">  <a onclick=" toggleMenu()">  <img id="menubut  src="images/bars-solid.svg" alt=""></button>
              </div>
             <div class="menulis">
              <a href="index.html">Home</a>
@@ -84,8 +84,13 @@
   <div class="content-header">
    <h1>Blog List</h1>  
    <label for=""> search </label> 
-   <spann id="dashSearch"> <button><img src="images/blog/search.svg" alt=""> </button> <input type="text" placeholder="">   </span>
-     </div> </form>
+   <span id="dashSearch"> <button><img src="images/blog/search.svg" alt=""> </button> <input type="text" placeholder="">  </span>
+
+    
+    <a class="addbloglink" href="">+ Add Blog</a>
+
+  </div>
+    </form>
      <div class="blog-cards swiper">
         <div class="previous-icon  swiper-button-prev">
 
@@ -137,7 +142,7 @@
 </textarea>          
 <label for="">Blog Image*</label>
 <input type="file" class="image-input" id="myImage">
-<button onclick="validateForm();add()" id="myBut"> Edit <img src="images/dashHome/add.svg" alt=""></button>
+<a onclick="validateForm();add()" id="myBut"> Edit <img src="images/dashHome/add.svg" alt=""></button>
 
 </div>
 
@@ -164,7 +169,7 @@
     </div>  
 
 </div>
-
+ 
   <script src="menubut.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
    <script src="js/sliderinblogDashbo.js"></script>

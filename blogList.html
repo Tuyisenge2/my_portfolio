@@ -13,7 +13,7 @@
         <nav class="navBg">
 
             <div class="header">
-             <div class="menuButdiv">  <button onclick=" toggleMenu()">  <img src="images/bars-solid.svg" alt=""></button>
+             <div class="menuButdiv">  <button onclick=" toggleMenu()">  <img id="menubut" src="images/bars-solid.svg" alt=""></button>
              </div>
             <div class="menulis">
              <a href="index.html">Home</a>
@@ -117,11 +117,19 @@
 </div>
 
 <script>
-    function toggleMenu() {
-               var smallScreenMenu = document.getElementById("smallScreenMenu");
-               smallScreenMenu.style.display = (smallScreenMenu.style.display === "flex") ? "none" : "flex";
-           }
-         
+   
+function toggleMenu() {
+            var smallScreenMenu = document.getElementById("smallScreenMenu");
+            var menuButtonImage = document.getElementById("menubut");
+
+            if (smallScreenMenu.style.display === "none" || smallScreenMenu.style.display === "") {
+                smallScreenMenu.style.display = "flex";
+                menuButtonImage.src = "images/cancelBut.svg"; // Change image source to close icon
+            } else {
+                smallScreenMenu.style.display = "none";
+                menuButtonImage.src = "images/bars-solid.svg"; // Change image source back to the original menu icon
+            }
+        }
      
      </script>
 <script src="js/fetchBlog.js"></script>
