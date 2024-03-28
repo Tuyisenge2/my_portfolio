@@ -1,7 +1,7 @@
 function validateForm() {
     event.preventDefault();
-    var firstName = document.getElementById('fname').value.trim();
-    var lastName = document.getElementById('lname').value.trim();
+    var firstName = document.getElementById('firstname').value.trim();
+    var lastName = document.getElementById('lastname').value.trim();
     var email = document.getElementById('email').value.trim();
     var password = document.getElementById('password').value.trim();
     let fnameErr=document.getElementById('fnameErr');
@@ -63,6 +63,5 @@ function validateForm() {
         return false;
     }
 
-    alert('Form submitted successfully!');
     return true;
 }

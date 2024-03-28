@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/loginStyle.css">
     <link rel="stylesheet" href="css/signUp.css">
+    <link rel="stylesheet" href="css/helper.css">
 
 </head>
 <body>
@@ -47,20 +48,25 @@
         <a href="login.html">Sign in</a>
    </div>
 <div class="right-container">
-    <div class="loader"></div>
+    <div class="loaderContainer">
+        <span class="loader"></span>
+    </div>
     <form action="" class="right-container-form" id="signUpForm">
       
         <p>sign up it's easy and quick </p>
         <label for="" id="fnameErr" class="errorDisappear"></label>
         <label for="" id="lnameErr" class="errorDisappear"></label>
       <div class="userName">     
-        <input type="text" class="right-container-form-input" placeholder="First Name*" name="" id="fname">
-        <input type="text" class="right-container-form-input" placeholder="Last Name*" name="" id="lname">
+        <input type="text" class="right-container-form-input" placeholder="First Name*" name="" id="firstname">
+        <input type="text" class="right-container-form-input" placeholder="Last Name*" name="" id="lastname">
     </div> 
          <label for="" id="emailErr" class="errorDisappear"></label>
         <input type="text" class="right-container-form-input" placeholder="Email*" name="" id="email">
         <label for="" id="passwordErr" class="errorDisappear"></label>
         <input type="text" class="right-container-form-input" placeholder="Password*" name="" id="password">
+        <input type="text" class="right-container-form-input" placeholder="Gender choose from male , female or other*" name="" id="gender">
+        <!-- <input type="text" class="right-container-form-input" placeholder="year of birth is enaugh*" name="" id="dateOfBirth"> -->
+
         <div class="birthDay">
             <p>BirthDay</p>
        <span id="Bday">
@@ -122,8 +128,14 @@
                 <option value="2012">2012</option>
             </select>
         </span>
+
     </div>
-<button onclick="validateForm()"> Sign up</button>
+
+    <!-- <button onclick="validateForm()"> Sign up</button> -->
+
+<!-- <input onclick="validateForm()" type="submit"> Sign up</input> -->
+<button type="submit"> Sign up</button>
+
     </form>
 </div>
    </div>
@@ -150,5 +162,6 @@
 </div>
 <script src="menubut.js"></script>
 <script src="js/signupValid.js"></script>
+<script src="js/signupBack.js"></script>
 </body>
 </html>
