@@ -30,7 +30,7 @@ if(commentValue!=="")
 location.reload();
  
 }
-
+     
 
 let arr=JSON.parse(storage);
 let displaycomment=document.querySelector('.displaycomment');

@@ -44,9 +44,12 @@ const response=await fetch('https://mybrand-be-zlsl.onrender.com/api/users/signu
 })
 .then((res)=>{
    
+
     console.log(res)
      hideLoader();  
-});
+     window.location.href="login.html"
+})
+.catch(error=>console.log('Error',error))
 
 
 // const result= await response.json();
