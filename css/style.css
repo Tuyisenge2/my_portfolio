@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-color: #2C0143;
+    width: 100%;
+    color:#ffffff;
+    font-family: sans-serif;
+   }
+   .navBg {
+    width: 100%;
+    background-color: #770C50;
+    padding-top: 39px;
+   }
+   
+.header{
+     width: 90%;
+     word-wrap: break-word;
+     letter-spacing: 0.3px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    text-align: center;      
+    
+     }
+     .header button{
+        
+        height:10%;
+        width: 10%;
+        background-color: #770C50;
+        border: none;
+        
+      }
+      .header button img{
+        height:50%;
+        width: 50%;
+        
+      }
+.header a {
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 15px;
+    height: 43px;
+text-decoration: none;
+color:white;
+font-weight: bold;
+transition: color 0.8s ease;
+}
+.header a:hover{
+    color: green;
+   
+}
+.contactUSbg{
+    padding-top: 15px;
+}
+
+
+.info{
+    margin: 76px 2px 15px 7px;
+    width: 90%;
+    display: block;
+    }
+
+.infoName{
+    width: 100%;
+}
+ #Name {
+    font-size: 25px;
+  }
+   
+.infoName p{
+   padding-left: 9px;
+    line-height:24px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-align:left;
+
+    word-wrap: break-word;
+    
+
+}
+
+
+
+.infoPic{
+    width: 90%;
+    padding-top: 75px;
+}
+
+.infoPic img{
+    border-radius: 10%;
+    width: 80%;
+    height: 243px;
+    margin-left:27px;
+}
+.moreButton{   
+     margin-left: 5px;
+    border-radius: 10%;
+    width: 31%;
+    height: 43px;
+    margin-left:7px;
+    font-size: 18px;
+
+}
+.moreButton img
+{
+   margin-top: -28px;
+   padding-left: 17px;
+   height: 25px;
+}
+
+.footer{
+    margin-top: 13px;
+    width: 100%;
+}
+.socialMed{
+
+    background-color: #770C50;
+    width: 39%;
+    display:inline-flex;
+  gap: 21px;
+  height: 35px;
+  align-items: center;
+  border-radius: 4px;
+  padding: 0px 5px 0px 5px;
+  margin-left: 18px;
+  margin-top: 14px;
+}
+footer p{
+    padding-top: 12px;
+text-align: center;
+color: white;
+font-weight: bold;
+
+}
+.socialMed img{
+    color:#ffffff;
+    width: 14%;
+    height: 21px;
+    border-radius: 5px;
+}
+
+
+@media(min-width:375px)
+{
+    
+    .header{
+        font-size: 10px;
+        word-wrap: break-word;
+       background-color: #770C50;
+       gap: 2px;
+
+    }
+
+    .header button{        
+        height: 45px;
+        width: 10%;
+      }
+    #Name {
+        font-size: 18px;
+      }
+      .infoName{
+        margin: 0px 11px 0px 11px;
+      }     
+       
+    .infoName p{
+        line-height:26px;
+        font-size: 11px;
+        letter-spacing: 1.5px;    
+    }
+    .infoPic{
+        padding-top: 75px;
+    }
+    .infoPic img{
+        border-radius: 11%;
+        width: 80%;
+        height: 250px;
+    }
+    footer{
+    margin-top: 54px;
+
+    }
+
+    .socialMed{
+        gap: 54px;
+    }
+
+    .socialMed img{
+        width: 8%;
+        height: 25px;
+        border-radius: 7px;
+    }
+    footer p{
+        padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    
+    }
+
+}
+@media(min-width:765px)
+{
+  .header{
+    height: 91px;
+    padding: 0px;
+     line-height: 9px;
+   gap: 9px;
+    font-size: 19px;
+ }      
+ 
+ .container{
+    display: flex;
+    flex-direction:column;
+    gap: 30px;
+}
+    .info{
+        width: 90%;
+        display: flex;
+        margin-left: 40px;
+    }
+
+        .infoName
+        {
+            width: 50%;   
+            float: left;
+            height: 200px;
+
+        }
+        #Name{
+            font-size: 31px;
+        }
+
+        .infoName p{
+            font-size: 16px;
+            line-height: 36px;
+        }
+        .infoPic
+        {
+            margin-top: -69px;
+          width: 50%;
+          float: right;
+          height: 200px;
+
+       
+          }
+             
+
+ .infoPic img
+ {
+    width: 95%;
+
+   }
+   
+   .socialMed img{
+    width: 17%;
+    height: 34px;
+    border-radius: 7px;
+   }
+
+   .socialMed{
+    margin-top: 34px;
+    width: 75%;
+    display:inline-flex;
+    gap: 15px;
+}
+
+   
+footer p{
+font-size: 28px;
+
+}
+
+}
+
+
+@media(min-width:1024px)
+{
+    .navBg {
+        width: 100%;
+        background-color: #770C50;
+        padding-top: 21px;
+       }
+       
+    .header{
+        height: 83px;
+         line-height: 13px;
+       gap: 15px;
+        justify-content: center;
+        align-items: center;
+     }      
+     
+
+ 
+     .info{
+        width: 90%;
+        display: flex;
+        margin-left: 60px;
+        height: 570px
+    }
+    #Name{
+        font-size: 36px;
+    }
+
+    .infoName
+    {
+        width: 50%;   
+        float: left;
+        padding-top: 60px;
+       
+
+    }
+    .infoPic
+    {
+      width: 50%;
+      float: right;
+    
+   
+      } 
+
+.infoName p{
+    font-size: 19px;
+    line-height: 68px;
+}
+
+.infoPic img
+ {
+    width: 85%;
+    height: 470px;
+   }
+   .socialMed{
+    width: 55%;
+    display:inline-flex;
+    gap: 15px;
+      }
+      .socialMed{
+        background-color: #770C50;
+        width: 21%;
+        display:inline-flex;
+       gap: 52px;
+      height: 72px;
+      align-items: center;
+      padding: 0px 10px 0px 21px;
+       border-radius: 15px;
+          }
+
+
+
+}
+
+
+@media(min-width:1440px)
+{
+   .header{
+        height: 95px;
+         line-height: 13px;
+       gap: 19px;
+        justify-content: center;
+        align-items: center;
+     }      
+
+     .header a{
+   font-size: 27px  ;
+ 
+     }
+
+
+ 
+     .info{
+        height: 670px
+    }
+    #Name{
+        font-size: 39px;
+    }
+
+    .infoName
+    {
+        width: 50%;   
+        float: left;
+        padding-top: 80px;
+       
+
+    }
+    .infoPic
+    {
+      width: 50%;
+      float: right;
+    
+   
+      } 
+
+.infoName p{
+    font-size: 23px;
+    line-height: 68px;
+}
+   .socialMed{
+    background-color: #770C50;
+    width: 15%;
+    display:inline-flex;
+  gap: 35px;
+height: 86px;
+align-items: center;
+border-radius: 15px;
+
+      }
+
+    
+
+}
+
+@media(min-width:2560px)
+{
+    .header{
+        height: 325px;
+        line-height: 13px;
+        letter-spacing: 6px;
+          gap: 25px;
+       display: flex;
+        justify-content: left;
+        align-items: center;
+     }      
+
+     .header a{
+   font-size: 57px  ;
+ 
+     }
+     .info{
+    gap: 70px;
+    height:700px;
+    margin-top: 159px;
+      margin-left: 210px;    
+  
+}
+
+    #Name{
+        font-size: 63px;
+    }
+
+    .infoName
+    {
+        width: 50%;   
+        float: left;
+        padding-top: 80px;
+       
+
+    }
+    .infoPic
+    {
+      width: 50%;
+      float: right;
+    
+   
+      } 
+
+.infoName p{
+    width:60% ;
+    font-size: 44px;
+    line-height: 89px;
+}
+
+.infoPic img
+ {
+    width: 85%;
+    height: 690px;
+   }
+
+   .socialMed{
+    background-color: #770C50;
+    width: 21%;
+    display:inline-flex;
+   gap: 52px;
+  height: 122px;
+  align-items: center;
+  padding: 0px 10px 0px 21px;
+   border-radius: 15px;
+      }
+}

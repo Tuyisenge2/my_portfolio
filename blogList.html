@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/blogStyle.css">
+    <link  rel="stylesheet"  href="css/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navBg">
+
+            <div class="header">
+             <div class="menuButdiv">  <button onclick=" toggleMenu()">  <img id="menubut" src="images/bars-solid.svg" alt=""></button>
+             </div>
+            <div class="menulis">
+             <a href="index.html">Home</a>
+                 <a href="about.html">About</a>
+                 <a href="skills.html">Skills</a>
+                 <a href="portfolio.html">Portfolio</a>
+                 <a href="blogList.html" >Blog</a>
+                 <a href="contact.html" >Contact</a>
+                 <a href="login.html"  class="contactUSbg">Sign in</a>
+            
+            </div>
+            
+            </div>
+            
+            <div id="smallScreenMenu" >
+                <a href="homepage.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blogList.html" >Blog</a>
+                    <a href="contact.html" >Contact</a>
+                    <a href="login.html"  class="contactUSbg">Sign in</a>
+               
+               </div>
+                    </nav>
+<div class="blog-wrapper">
+    <div class="wrapper-title">
+<h1>Blog-List</h1>
+    </div>
+       
+<div class="blog-cards swiper">
+<div class="previous-icon  swiper-button-prev">
+</div>
+<div class="blog-for-swiper"> 
+<div class="blog-card-displ swiper-wrapper">
+     
+    <!--
+                                    
+    <div class="single-blog-card swiper-slide">
+          <div class="blog-pic">
+      <img src="images/blog/figma.png" alt="">
+        </div>
+       <div class="blog-desrciption">
+           <h2>Figma1</h2>
+        <p>JavaScript, often abbreviated as JS, is more than just a scripting language; it's a cornerstone of modern web ........</p>
+    <div class="blog-like-comment">
+     <div class="blog-like">
+ <div class="like-nbr-count"><p>23.4k</p>
+     </div>
+       <div class="like-icon"><img src="images/blog/Vector (3).svg" alt=""></div>
+            </div>
+   <div class="blog-comment">
+      <div class="comment-nbr-count">
+            <p>23.9k</p>
+           </div>
+         <div class="comment-icon">
+           <img src="images/blog/Vector.svg" alt="">
+                 </div>
+            </div>
+              </div>
+               <div class="blog-view-more">
+         <a href="singleblog.html">view more</a>
+             <a href="singleblog.html"><img src="images/blog/Vector (4).svg" alt=""></a>
+       </div>
+          </div>
+                                        
+                                       
+       </div>  
+      
+    -->
+             
+ 
+                                              
+                                    
+</div>  
+</div>
+  <div class="next-icon swiper-button-next">
+  </div>
+
+</div>
+</div>
+<div class="footer">
+    <div class="profile">
+        <img src="images/infopic2.jpg" alt="">
+        <p>Tuyisenge</p>
+    </div>
+    <div class="copyRight">
+     <p> Copyright © 2022 Picto.</p>
+
+    </div>
+    <div class="socialMEd">
+        <img src="images/socialMed/Vector.svg" alt="">
+            <img src="images/socialMed/Vector (1).svg" alt="">
+            <img src="images/socialMed/Vector (2).svg" alt="">
+            <img src="images/socialMed/Vector (3).svg" alt="">
+
+    </div>
+</div>  
+
+
+</div>
+
+<script>
+   
+function toggleMenu() {
+            var smallScreenMenu = document.getElementById("smallScreenMenu");
+            var menuButtonImage = document.getElementById("menubut");
+
+            if (smallScreenMenu.style.display === "none" || smallScreenMenu.style.display === "") {
+                smallScreenMenu.style.display = "flex";
+                menuButtonImage.src = "images/cancelBut.svg"; // Change image source to close icon
+            } else {
+                smallScreenMenu.style.display = "none";
+                menuButtonImage.src = "images/bars-solid.svg"; // Change image source back to the original menu icon
+            }
+        }
+     
+     </script>
+<script src="js/fetchBlog.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/sliders.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div class="container">
+   <nav class="navBg">
+
+            <div class="header">
+             <div class="menuButdiv">  <button onclick=" toggleMenu()">  <img  id="menubut" src="images/bars-solid.svg" alt=""></button>
+             </div>
+            <div class="menulis">
+             <a href="index.html">Home</a>
+                 <a href="about.html">About</a>
+                 <a href="skills.html">Skills</a>
+                 <a href="portfolio.html">Portfolio</a>
+                 <a href="blogList.html" >Blog</a>
+                 <a href="contact.html" >Contact</a>
+                 <a href="login.html"  class="contactUSbg">Sign in</a>
+            
+            </div>
+            
+            </div>
+            
+            <div id="smallScreenMenu" >
+                <a href="homepage.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blogList.html" >Blog</a>
+                    <a href="contact.html" >Contact</a>
+                    <a href="login.html"  class="contactUSbg">Sign in</a>
+               
+               </div>
+ </nav>
+</div>
+<div class="contact-Container">
+    <div class="contact-address-container">
+        <div class="cont-title">
+           <p>Contact me</p>
+        </div>
+        <div class="cont-add">
+            <div class="address">
+            <h2>Address:</h2>
+            <p>kigali st 31134</p>
+            </div>
+            <div class="address">
+               <h2>my Email:</h2> 
+               <p>Tuyisenge@gmail.com</p>
+            </div>
+            <div class="address">
+                <h2>call me now:</h2>
+                <p>+250781335685</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="question-form-container">
+        <div class="quest-title">
+            <p>Questions & Advice form 
+            </p>
+        </div>
+        <div class="quest-form">
+            <form class="quest-form">
+              <label for=""  id="EmailError"class="errorDisappear" ></label>
+            <input type="text"id="email" placeholder="Email*">
+            <label for=""  id="messageError" class="errorDisappear"></label>
+            <input type="text" id="message" placeholder="Message*">
+            <button onclick="validateForm()">submit</button>
+        </form>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="footer">
+    <div class="profile">
+        <img src="images/infopic2.jpg" alt="">
+        <p>Tuyisenge</p>
+    </div>
+    <div class="copyRight">
+     <p> Copyright © 2022 Picto.</p>
+
+    </div>
+    <div class="socialMEd">
+        <img src="images/socialMed/Vector.svg" alt="">
+            <img src="images/socialMed/Vector (1).svg" alt="">
+            <img src="images/socialMed/Vector (2).svg" alt="">
+            <img src="images/socialMed/Vector (3).svg" alt="">
+
+    </div>
+</div>  
+
+</div>
+ 
+<script src="menubut.js"></script>
+<script src="js/contactFormvalidation.js"></script>
+</body>
+</html>

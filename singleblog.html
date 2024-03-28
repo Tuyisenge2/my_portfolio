@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/singleBlog.css">
+</head>
+<body>
+    <div class="container">
+
+        
+        <nav class="navBg">
+
+            <div class="header">
+             <div class="menuButdiv">  <button onclick=" toggleMenu()">  <img id="menubut" src="images/bars-solid.svg" alt=""></button>
+             </div>
+            <div class="menulis">
+             <a href="index.html">Home</a>
+                 <a href="about.html">About</a>
+                 <a href="skills.html">Skills</a>
+                 <a href="portfolio.html">Portfolio</a>
+                 <a href="blogList.html" >Blog</a>
+                 <a href="contact.html" >Contact</a>
+                 <a href="login.html"  class="contactUSbg">Sign in</a>
+            
+            </div>
+            
+            </div>
+            
+            <div id="smallScreenMenu" >
+                <a href="homepage.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blogList.html" >Blog</a>
+                    <a href="contact.html" >Contact</a>
+                    <a href="login.html"  class="contactUSbg">Sign in</a>
+               
+               </div>
+                    </nav>
+
+<div class="content-blog">
+    <div class="cont-blog-text">
+    
+ 
+    </div>
+
+    <div class="blog-like-comment ">
+        <div class="blog-like">
+    <div class="like-nbr-count">
+    <p></p>
+    </div>
+    <div class="like-icon">
+        <div class="red-Like-icon">
+         <button class="likeBut" onclick="likingBlog()"> <img src="images/blog/heart red.svg" alt=""> </button>
+        </div>
+     <div class="White-red-icon">
+     <button class="UnlikeBut" onclick="likingBlog()" >   <img src="images/blog/nonClickedLike.svg" alt=""> </button>
+     </div>
+           </div>
+
+        </div>
+        <div class="blog-comment">
+            <div class="comment-nbr-count">
+            
+            </div>
+            <div class="comment-icon">
+            <img src="images/blog/Vector.svg" alt="">
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="displaycomment">
+
+
+</div>
+    <div  class="AddToComment Hr-line-lower">
+        <input type="text" id="commentValue" placeholder="Add to comment">
+        <button onclick="storeCom()">Post</button>
+
+    </div>
+
+    <div class="footer">
+        <div class="profile">
+            <img src="images/infopic2.jpg" alt="">
+            <p>Tuyisenge</p>
+        </div>
+        <div class="copyRight">
+         <p> Copyright © 2022 Picto.</p>
+    
+        </div>
+        <div class="socialMEd">
+            <img src="images/socialMed/Vector.svg" alt="">
+                <img src="images/socialMed/Vector (1).svg" alt="">
+                <img src="images/socialMed/Vector (2).svg" alt="">
+                <img src="images/socialMed/Vector (3).svg" alt="">
+    
+        </div>
+    </div>  
+</div>
+</div>
+<script src="menubut.js"></script>
+<script src="js/fetchBlog.js"></script>
+<script src="js/storeComment.js"></script>
+</body>
+</html>

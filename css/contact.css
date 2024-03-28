@@ -1,0 +1,310 @@
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+  background-color: #2C0143;
+  color:#ffffff;
+  font-family: sans-serif;
+  padding: 5rem;
+ }
+
+ .container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .navBg {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+  background-color: #2C0143;
+  padding-top: 2%;
+ }
+ 
+ .header{
+display: flex;
+ }
+
+ .menuButdiv {
+  display: none;
+  background-color: inherit;
+}
+
+.menuButdiv button{
+background-color: inherit;
+border-color: #2C0143;
+border: none;
+}
+
+.menuButdiv button img{
+  width: 6vw;
+  height: 5vh;
+  filter: invert(1);
+
+}
+
+ .menulis{
+  padding: 1% 0;
+  max-width: 750px;
+  width: 100%;
+  word-wrap: break-word;
+  letter-spacing: 0.1vw;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2%;
+ 
+ }
+ .menulis a{
+
+  font-size: 1vw;
+  text-decoration: none;
+ color:white;
+  font-weight: 800;
+ transition: color 0.8s ease;
+ padding: 1%;  
+
+ }
+ .contactUSbg{    
+  background-color:#A387AF;
+ 
+ }
+
+ .header a:hover{
+  color: green;
+ 
+}
+
+#smallScreenMenu{
+visibility: collapse;  
+}
+ 
+
+
+   /*container*/
+
+.contact-Container{
+
+  margin-Top: 3%;
+    background-color: white;
+    display: flex;
+    color: #2C0143;
+    padding: 4%;
+  gap: 5%;
+}
+.contact-address-container{
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    padding:2% 5%;
+    width: 100%;
+    max-width: 450px;
+
+}
+.cont-title p{
+  font-size: clamp(1px,1.2vw,34px);
+  font-weight: 600;
+}
+   .cont-add{ 
+    display: flex;
+    flex-direction: column;  
+   }
+   .cont-add h2{
+font-size: clamp(1px,1vw,26px);
+color: gray;
+   }  
+   .cont-add p{
+    font-size: clamp(1px,1.2vw,34px);
+    letter-spacing: .5px;
+font-weight: bold;
+margin-top: 1%;
+   }
+.address{
+  margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+   .question-form-container{
+    flex: 1;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    padding:2% 5%;
+    max-width: 700px;
+    width: 100%;
+    gap: 2%;
+   }
+   .quest-title p{
+    font-size: clamp(1px,1.2vw,34px);
+    font-weight: 600;
+   }
+   .quest-form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5vh;
+
+   }
+   .quest-form input{
+    padding-bottom: 0.1vh;
+    font-size: clamp(15px,1.5vw,34px);
+    padding-left:4%;
+    border-bottom: 0.3vh solid #2C0143;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   min-height: 45px;
+   width: clamp(45px,100%,450px);
+   }
+   .quest-form button{
+    color: white;
+    background-color: #2C0143;
+    font-size: clamp(9px,2vw,21px);
+  min-height: 35px;
+  width:100%;
+  max-width: 124px;
+ padding: 1%;
+     }
+
+     .styleuserErrorMEss{
+      color: red;
+      display: block;
+
+     }
+     .errorDisappear{
+      display: none;
+     }
+
+
+
+/*footer*/
+
+
+
+.footer{
+  display: flex;
+  gap: 11vw;
+  height: auto;
+  margin-top: 9vh;
+  margin-left: 23vw;
+}
+.profile{
+  display: inline-flex;
+    gap: 1vw;
+}
+.profile img{
+border-radius: 50%;
+height: 2.4vw;
+width: 2.4vw;
+}
+.profile p{
+font-size: 1.2vw;
+padding-top: 1vh;
+}
+
+.copyRight{
+  height: auto;
+}
+.copyRight p{
+  font-size: 1.2vw;
+  padding-top: 0.9vh;
+}
+
+.socialMEd{
+  display: inline-flex;
+  gap: 2vw;
+ justify-content: center;
+ align-items: center;
+ padding-left: 2vw;
+ padding-right: 2vw;
+
+  background-color: #A387AF;
+  height: 8vh;
+
+}
+.socialMEd img{
+  height: 2.4vh;
+  width: 2vw;
+}
+
+@media (max-width:670px) {
+    
+.contact-Container{
+     flex-direction: column;
+    height: auto;
+    padding: 2vh;
+    gap: 2vh;
+}
+.contact-address-container{
+    width: 90%;
+    margin: auto;
+    }
+    .address {
+      width: 100%;
+      max-width: 100px;
+         border: 2px solid green;
+      margin-top: 15px;
+    
+  }
+
+    
+.cont-title p {
+  font-size:2vw
+}
+
+
+.cont-add h2 {
+    font-size:  1.5vw;
+  }
+
+
+.question-form-container{
+    width: 90%;
+    margin: auto;
+}
+
+#smallScreenMenu{
+    visibility: visible;
+    display: flex;
+       margin-top: 1vh;
+       width: 100%;
+        gap: 2.7vw;
+      padding-bottom: 0.2vh;    
+      flex-direction: column;
+          }
+   
+        #smallScreenMenu a{
+   text-decoration: none;
+   color: #ffffff;
+         width: 30%;
+         padding-top: 1vh;
+         padding-left: 0.61vw;
+         font-size: 3vw;
+         height: 4vh;
+   
+        }   
+      .menulis{
+       visibility: collapse;
+      display: none;
+     
+      }
+
+      .menuButdiv {
+        display: flex;
+        margin-bottom: 1vh;
+    
+      }
+
+
+    }

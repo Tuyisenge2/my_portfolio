@@ -1,0 +1,346 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+  body{
+
+    background-color: #2C0143;
+    color:#ffffff;
+    font-family: sans-serif;
+    padding: 5rem;
+   }
+   .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   }
+ 
+   .navBg {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #2C0143;
+    padding-top: 2%;
+   }
+   
+ .header{
+  display: flex;
+   }
+  
+   .menuButdiv {
+    display: none;
+    background-color: inherit;
+  }
+  
+  .menuButdiv button{
+  background-color: inherit;
+  border-color: #2C0143;
+  border: none;
+  }
+  
+  .menuButdiv button img{
+    width: 6vw;
+    height: 5vh;
+    filter: invert(1);
+  
+  }
+  
+   .menulis{
+    padding: 1% 0;
+    max-width: 750px;
+    width: 100%;
+    word-wrap: break-word;
+    letter-spacing: 0.1vw;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2%;
+   
+   }
+   .menulis a{
+  
+    font-size: 1rem;
+    text-decoration: none;
+   color:white;
+    font-weight: 800;
+   transition: color 0.8s ease;
+   padding: 1%;  
+  
+   }
+   .contactUSbg{    
+    background-color:#A387AF;
+   
+   }
+  
+   .header a:hover{
+    color: green;
+   
+  }
+  
+  #smallScreenMenu{
+  visibility: collapse;  
+  }
+ 
+   
+/*container */
+   .login-container{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    margin-top: 4%;
+   }
+   .left-container{
+    flex: 1.5;
+     background-image: url('images/log/login.png');
+    background-size: cover; 
+  background-position: center; 
+  
+  text-align: center;
+   padding-top: 19vh;
+   width: 100%;
+  
+}
+
+  .left-container h1{
+     font-size: 3vw;
+
+  }
+  .left-container p{    
+        padding-top: 4vh;
+    font-size: 1.7vw;
+    letter-spacing: 0.2vw;
+    line-height: 5vh;
+padding-bottom: 5vh;
+font-weight: bold;
+  }
+  .left-container a{
+text-decoration: none;
+color: white;
+background-color: #A387AF;
+border-radius: 2vh;
+font-size: 2vw;
+padding: 2vh;
+
+
+
+  }
+   .right-container{
+    background-color: white;
+    flex: 2;
+   
+   }
+  
+
+   .right-container-form{
+    display: flex;
+    flex-direction: column;
+    gap:5vh;
+    padding: 11vh;
+   }
+   .right-container-form p{
+    color: #2C0143;
+     font-size: 2vw;
+   }
+   .right-container-form-input{
+    font-size: 1vw;
+    border-bottom: 0.3vh solid #2C0143;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   width: 35vw;
+   height: 5vh;
+   }
+  
+   #checkbox-style{
+    display: flex;
+   }
+   #checkbox-style input{
+         height: 2vh;
+         width: 2vh;
+                     }
+            #checkbox-style p{
+  font-size: 1vw;
+            }
+            .right-container a{
+              margin-left: 1vw;
+                text-decoration: none;
+                color: #2C0143;
+                font-size: 1vw;
+                letter-spacing: 0.00911vw;
+
+            }
+             .right-container button{
+          width: 15vw;
+          color: white;
+          height: 6vh;
+     font-size: 1.5vw;
+     background-color: #A387AF;
+     border-radius: 35vh
+     
+            }
+
+
+
+            .footer{
+              margin-top: 5%;
+              display: flex;
+              gap: 20vw;
+              height: auto;
+            }
+            .profile{
+              display: inline-flex;
+                gap: 1vw;
+            }
+            .profile img{
+            border-radius: 50%;
+            height: 2.4vw;
+            width: 2.4vw;
+            }
+            .profile p{
+            font-size: 1.2vw;
+            padding-top: 1vh;
+            }
+            
+            .copyRight{
+              height: auto;
+            }
+            .copyRight p{
+              font-size: 1.2vw;
+              padding-top: 0.9vh;
+            }
+            .socialMEd{
+              display: inline-flex;
+              gap: 5vw;
+            }
+            .socialMEd img{
+              height: 2vw;
+              width: 2vw;
+            }
+
+         .styleuserErrorMEss{
+          color: red;
+          display: block;
+
+         }
+         .errorDisappear{
+          display: none;
+         }
+
+            @media (max-width:768px) {
+              
+#smallScreenMenu{
+  visibility: visible;
+  display: flex;
+     margin-top: 1vh;
+     width: 100%;
+      gap: 2.7vw;
+    padding-bottom: 0.2vh;    
+    flex-direction: column;
+        }
+ 
+      #smallScreenMenu a{
+ text-decoration: none;
+ color: #ffffff;
+       width: 30%;
+       padding-top: 1vh;
+       padding-left: 0.61vw;
+       font-size: 3vw;
+       height: 4vh;
+ 
+      }   
+    .menulis{
+     visibility: collapse;
+    display: none;
+   
+    }
+
+    .menuButdiv {
+      display: flex;
+      margin-bottom: 1vh;
+  
+    }
+    .login-container{
+      flex-direction: column;
+    }
+
+    .left-container{
+    text-align: center;
+     padding-top: 10vh;
+     width: 100%;
+     padding-bottom: 5vh;
+    
+  }
+  
+    .left-container h1{
+       font-size: clamp(12px,3vw,45px);
+  
+    }
+    .left-container p{    
+          padding-top: 2vh;
+          font-size: clamp(8px,2vw,36px);
+      line-height: 3vh;
+  padding-bottom: 3vh;
+    }
+    .left-container a{
+  border-radius: 2vh;
+  font-size: clamp(8px,2.5vw,36px);
+  padding: 2vh; 
+    }
+    
+   .right-container{
+    flex: 2;
+   
+   }
+  
+
+   .right-container-form{
+    display: flex;
+    flex-direction: column;
+    gap:5vh;
+    padding: 11vh;
+   }
+   .right-container-form p{
+    color: #2C0143;
+     font-size: clamp(12px,3vw,45px);
+   }
+   .right-container-form-input{
+    font-size: clamp(12px,1.9vw,45px);
+   width: clamp(80px,40%,240px);
+   height: 6vh;
+   }
+  
+   #checkbox-style{
+    display: flex;
+   }
+   #checkbox-style input{
+         height: 2vh;
+         width: clamp(30px,3%,70px);
+                     }
+            #checkbox-style p{
+  font-size:clamp(12px,1.9vw,45px);
+            }
+            .right-container a{
+              margin-left: 1vw;
+                text-decoration: none;
+                color: #2C0143;
+                font-size: clamp(12px,1.9vw,45px);
+                letter-spacing: 0.00911vw;
+
+            }
+             .right-container button{
+          width: clamp(67px,25%,120px);
+          color: white;
+          height: 6vh;
+     font-size: 1.5vw;
+     background-color: #A387AF;
+     border-radius: 35vh
+     
+            }
+
+            .footer{
+              padding-top: 44vh;
+            }
+            }

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/dashboardBLogCss.css">
+    <link rel="stylesheet" href="css/sidelinkcss.css">
+    <link  rel="stylesheet"  href="css/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.tiny.cloud/1/qjkdfs18v1sszcjxrsw5sgwijxfjw617dtqoocpq9zrfa3bm/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+</head>
+<body>
+    <div class="container">
+      
+        <nav class="navBg">
+
+            <div class="header">
+             <div class="menuButdiv">  <button onclick=" toggleMenu()">  <img id="menubut" src="images/bars-solid.svg" alt=""></button>
+             </div>
+            <div class="menulis">
+             <a href="index.html">Home</a>
+                 <a href="about.html">About</a>
+                 <a href="skills.html">Skills</a>
+                 <a href="portfolio.html">Portfolio</a>
+                 <a href="blogList.html" >Blog</a>
+                 <a href="contact.html" >Contact</a>
+                 <a href="login.html"  class="contactUSbg">Sign in</a>
+            
+            </div>
+            
+            </div>
+            
+            <div id="smallScreenMenu" >
+                <a href="homepage.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blogList.html" >Blog</a>
+                    <a href="contact.html" >Contact</a>
+                    <a href="login.html"  class="contactUSbg">Sign in</a>
+               
+               </div>
+                    </nav>
+  
+<div class="main">
+
+    <div class="sideBar">
+        <div class="Admin">
+    <img src="images/dashHome/Ellipse 15.svg" alt="">
+       <p>T.Tite<br> Admin </p>
+
+        </div>
+        <div class="appli-text">
+            <p>Applications</p>
+        </div>
+        <div class="SideLink" >
+            <a href="dashboardHome.html" ><img src="images/dashHome/Vector (4).svg" alt=""></a>
+          <a href="dashboardHome.html" >  <p>Dashboard</p> </a>
+        </div>
+      
+        <div class="SideLink">
+            <a href="dashboardMessage.html"><img src="images//dashHome/simple-icons_googlemessages (1).svg" alt=""></a>
+            <a href="dashboardMessage.html"> <p>Message</p> </a>
+        </div>
+      <div class="SideLink selectedLink">
+        <a href="dashboardBLog.html"><img src="images/dashHome/Vector (5).svg" alt=""></a>
+        <a href="dashboardBLog.html"> <p>Blog</p> </a>
+      </div>
+    
+      <div class="appli-text">
+        <p>Others</p>
+      </div>
+     <div class="SideLink">
+        <a href=""><img src="images/dashHome/Vector (7).svg" alt=""></a>
+        <a href="">  <p>Log out</p> </a>
+     </div>
+    </div>
+
+    <div class="content">
+        <form >
+  <div class="content-header">
+   <h1>Blog Edit</h1>  
+   <label for=""> search </label> 
+   <spann id="dashSearch"> <button><img src="images/blog/search.svg" alt=""> </button> <input type="text" placeholder="">   </span>
+     </div> </form>
+     <div class="blog-cards swiper">
+    
+
+  <div class="createNewBlog">
+    <form action="" class="right-container-form">
+        <p>Add an Blog </p>
+   <label for="">Blog Name*</label>
+   <span for="" id="blogNAmeErr" class="errorDisappear"></span>
+  <input type="text" class="right-container-form-input" placeholder="" name="" id="blogName">
+   
+  <label for="">Blog summary</label>
+  <span for="" id="blogSumErr" class="errorDisappear"> </span>
+ <input type="text" class="right-container-form-input" placeholder="" name="" id="blogSummary">
+
+
+  <label for="">Blog description*</label>
+  <span for="" id="blogdescErr" class="errorDisappear"></span>
+  <textarea id="blogDescription">
+  </textarea>          
+  <label for="">Blog Image*</label>
+  <input type="file" class="image-input" id="myImage">
+<button onclick="validateForm();SaveEdit() " id="myBut"> Save <img src="images/dashHome/add.svg" alt=""></button>
+    
+</form>
+</div>
+    </div>
+        
+
+    </div>
+</div> 
+
+
+
+
+
+    <div class="footer">
+        <div class="profile">
+            <img src="images/infopic2.jpg" alt="">
+            <p>Tuyisenge</p>
+        </div>
+        <div class="copyRight">
+         <p> Copyright © 2022 Picto.</p>
+    
+        </div>
+        <div class="socialMEd">
+            <img src="images/socialMed/Vector.svg" alt="">
+                <img src="images/socialMed/Vector (1).svg" alt="">
+                <img src="images/socialMed/Vector (2).svg" alt="">
+                <img src="images/socialMed/Vector (3).svg" alt="">
+    
+        </div>
+    </div>  
+
+</div>
+ 
+<script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
+toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+   
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ],
+      ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+    });
+  </script>
+  
+  <script src="menubut.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/sliderinblogDashbo.js"></script>
+   <script src="js/dashboardvalid.js"></script>
+   <script src="js/editdashboardBlog.js"></script>
+ 
+</body>
+</html>
